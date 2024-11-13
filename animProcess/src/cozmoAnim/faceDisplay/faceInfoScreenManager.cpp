@@ -1384,8 +1384,8 @@ void FaceInfoScreenManager::DrawSensorInfo(const RobotState& state)
 
 
   std::string prox1, prox2;
-  //if(!IsWhiskey())
-  //{
+  if(!IsWhiskey())
+  {
     sprintf(temp,
             "DIST:   %3umm",
             state.proxData.distance_mm);
@@ -1397,7 +1397,7 @@ void FaceInfoScreenManager::DrawSensorInfo(const RobotState& state)
             state.proxData.ambientIntensity,
             state.proxData.spadCount);
     prox2 = temp;
-  //}
+  }
 
   sprintf(temp,
           "TOUCH: %u",

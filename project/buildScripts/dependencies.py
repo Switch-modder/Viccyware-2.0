@@ -525,49 +525,49 @@ def svn_package(svn_dict):
 
         # Download from the local HTTP server
         print("Downloading " + export_dirname + "...")
-        if version is not None:
-            remote_loc = os.path.join(root_url, svn_dict.get("main_folder", ""), repo + '-' + version + ".zip")
-        else:
-            remote_loc = os.path.join(root_url, svn_dict.get("main_folder", ""), repo + ".zip")
-        local_loc = loc + ".zip"
+        #if version is not None:
+        #    remote_loc = os.path.join(root_url, svn_dict.get("main_folder", ""), repo + '-' + version + ".zip")
+        #else:
+        #    remote_loc = os.path.join(root_url, svn_dict.get("main_folder", ""), repo + ".zip")
+        #local_loc = loc + ".zip"
 
-        try:
-            # Fetch file from the HTTP server
-            print("Fetching file from HTTP server: " + remote_loc)
-            response = urllib2.urlopen(remote_loc)
-            with open(local_loc, 'wb') as local_file:
-                local_file.write(response.read())
+        #try:
+        #    # Fetch file from the HTTP server
+        #    print("Fetching file from HTTP server: " + remote_loc)
+        #    response = urllib2.urlopen(remote_loc)
+        #    with open(local_loc, 'wb') as local_file:
+        #        local_file.write(response.read())
 
-        except urllib2.HTTPError as e:
-            if e.code == 404:
-                print("The object does not exist on the server.")
-            else:
-                raise
+        #except urllib2.HTTPError as e:
+        #    if e.code == 404:
+        #        print("The object does not exist on the server.")
+        #    else:
+        #        raise
 
         # Extract the assets
-        print("Extracting " + export_dirname + "...")
-        with zipfile.ZipFile(local_loc, 'r') as zip_ref:
-            zip_ref.extractall(DEPENDENCY_LOCATION)
-        os.remove(local_loc)  # Remove the ZIP after extraction
+        #print("Extracting " + export_dirname + "...")
+        #with zipfile.ZipFile(local_loc, 'r') as zip_ref:
+        #    zip_ref.extractall(DEPENDENCY_LOCATION)
+        #os.remove(local_loc)  # Remove the ZIP after extraction
 
         # Organize the assets into the required directory structure
-        os.rename(os.path.join(DEPENDENCY_LOCATION, repo), loc)
+        #os.rename(os.path.join(DEPENDENCY_LOCATION, repo), loc)
 
-        for sub_dir in os.listdir(loc):
-            if sub_dir != branch:
-                shutil.rmtree(os.path.join(loc, sub_dir))
+        #for sub_dir in os.listdir(loc):
+        #    if sub_dir != branch:
+        #        shutil.rmtree(os.path.join(loc, sub_dir))
 
-        if len(sub_dirs):
-            for sub_dir in sub_dirs:
-                src_loc = os.path.join(loc, branch, sub_dir)
-                dst_loc = os.path.join(loc, sub_dir)
-                shutil.move(src_loc, dst_loc)
-        else:
-            for sub_dir in os.listdir(os.path.join(loc, branch)):
-                src_loc = os.path.join(loc, branch, sub_dir)
-                dst_loc = os.path.join(loc, sub_dir)
-                shutil.move(src_loc, dst_loc)
-        shutil.rmtree(os.path.join(loc, branch))
+        #if len(sub_dirs):
+        #    for sub_dir in sub_dirs:
+        #        src_loc = os.path.join(loc, branch, sub_dir)
+        #        dst_loc = os.path.join(loc, sub_dir)
+        #        shutil.move(src_loc, dst_loc)
+        #else:
+        #    for sub_dir in os.listdir(os.path.join(loc, branch)):
+        #        src_loc = os.path.join(loc, branch, sub_dir)
+        #        dst_loc = os.path.join(loc, sub_dir)
+        #        shutil.move(src_loc, dst_loc)
+        #shutil.rmtree(os.path.join(loc, branch))
 
         # Extract tar files if necessary
         if extract_types:
