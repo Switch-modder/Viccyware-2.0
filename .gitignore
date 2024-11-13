@@ -416,6 +416,5 @@ robot_sshkey
 ota/out
 ota/ota-server/*.ota
 snowboy/server/main
-ota/wire-os
-/ota
+
 
