@@ -208,7 +208,7 @@ void FaceInfoScreenManager::Init(Anim::AnimContext* context, Anim::AnimationStre
   ADD_SCREEN(CustomText, None);
   ADD_SCREEN(Main, Network);
   ADD_SCREEN_WITH_TEXT(ClearUserData, Main, {"CLEAR OUT SOUL?"});
-  ADD_SCREEN_WITH_TEXT(ClearUserDataFail, Main, {"UNABLE TO CLEAR OUT SOUL"});
+  ADD_SCREEN_WITH_TEXT(ClearUserDataFail, Main, {"CLEARING OUT SOUL FAILED"});
   ADD_SCREEN_WITH_TEXT(Rebooting, Rebooting, {"Vector will remember that..."});
   ADD_SCREEN_WITH_TEXT(SelfTest, Main, {"START SELF TEST?"});
   ADD_SCREEN(SelfTestRunning, SelfTestRunning)
