@@ -22,11 +22,15 @@ static const int SELECTED_CHANNELS = 0
 
 static const int      TICKS_PER_SECOND = 200;
 
-static const uint16_t BATTERY_FULL_VOLTAGE = ADC_VOLTS(4.1); // 4.2 in a perfect world, but give some room for ADC variance, imperfect battery, etc.
+static const uint16_t BATTERY_FULL_VOLTAGE = ADC_VOLTS(4.075); // 4.2 in a perfect world, but give some room for ADC variance, imperfect battery, etc.
 static const int      CHARGE_FULL_TIME = TICKS_PER_SECOND * 60 * 5;           // 5 minutes
 
 static const uint16_t TRANSITION_POINT = ADC_VOLTS(4.3);
+<<<<<<< HEAD
 static const uint32_t FALLING_EDGE = ADC_WINDOW(ADC_VOLTS(3.50), ~0); 
+=======
+static const uint32_t FALLING_EDGE = ADC_WINDOW(ADC_VOLTS(3.50), ~0);
+>>>>>>> parent of c4290ea908 (Update analog.cpp)
 static const int      MINIMUM_ON_CHARGER = 5;
 
 static const uint16_t*  TEMP30_CAL_ADDR = (uint16_t*)0x1FFFF7B8;
