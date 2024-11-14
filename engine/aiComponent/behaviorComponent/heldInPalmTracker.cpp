@@ -47,9 +47,9 @@ namespace {
   
   // Once the robot has started being held in a user's palm, the robot should not immediately
   // cancel if a few cliffs are detected, since this makes the tracker less robust to situations
-  // where the robot can turn in place and accidentally expose one ore more cliff sensors to a
+  // where the robot can turn in place and accidentally expose one or more cliff sensors to a
   // "cliff" caused by the gaps between the user's fingers when holding the robot.
-  static const int kMaxCliffsAllowedWhileHeldInPalm = 2;
+  static const int kMaxCliffsAllowedWhileHeldInPalm = 1;
   
   // To prevent false-positive detections of the robot being held in a palm, we enforce that
   // the robot must observe at least this many cliffs after being picked up to try to capture
