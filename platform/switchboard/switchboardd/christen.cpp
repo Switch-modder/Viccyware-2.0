@@ -32,7 +32,7 @@ std::string Christen::GenerateName() {
     std::cerr << "Fatal: No product name found" << std::endl;
   }
 
-  std::string product_name(prop_value);
+  std::string product_name = "Cozmo";
   // The robot shall be named "<ProductName> XYXY" where
   // X is a random letter and Y is a random digit.
   // In some fonts, '0' and 'O' look alike, so they are excluded.
