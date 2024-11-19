@@ -26,7 +26,11 @@ static const uint16_t BATTERY_FULL_VOLTAGE = ADC_VOLTS(4.075); // 4.2 in a perfe
 static const int      CHARGE_FULL_TIME = TICKS_PER_SECOND * 60 * 5;           // 5 minutes
 
 static const uint16_t TRANSITION_POINT = ADC_VOLTS(4.3);
+<<<<<<< HEAD
+static const uint32_t FALLING_EDGE = ADC_WINDOW(ADC_VOLTS(3.50), ~0); 
+=======
 static const uint32_t FALLING_EDGE = ADC_WINDOW(ADC_VOLTS(3.50), ~0);
+>>>>>>> parent of c4290ea908 (Update analog.cpp)
 static const int      MINIMUM_ON_CHARGER = 5;
 
 static const uint16_t*  TEMP30_CAL_ADDR = (uint16_t*)0x1FFFF7B8;
@@ -338,8 +342,8 @@ static void handleTemperature() {
 
 static void handleLowBattery() {
   // Levels
-  static const uint32_t EMERGENCY_POWER_DOWN_POINT = ADC_VOLTS(3.4);
-  static const uint32_t LOW_VOLTAGE_POWER_DOWN_POINT = ADC_VOLTS(3.62);
+  static const uint32_t EMERGENCY_POWER_DOWN_POINT = ADC_VOLTS(3.2);
+  static const uint32_t LOW_VOLTAGE_POWER_DOWN_POINT = ADC_VOLTS(3.4);
   static const int      LOW_VOLTAGE_POWER_DOWN_TIME = 45*TICKS_PER_SECOND; // 45 seconds
   static const int      EARLY_POWER_COUNT_TIME = TICKS_PER_SECOND; // 1 second
 
