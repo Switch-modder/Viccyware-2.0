@@ -259,7 +259,6 @@ enum uint_8 BehaviorClass {
   RobustChargerObservation,
   TrackCube,
   TrackFace,
-  WireTest,
 
   // volume
   Volume,

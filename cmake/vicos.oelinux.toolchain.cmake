@@ -118,12 +118,12 @@ list(APPEND VICOS_LINKER_FLAGS
 	#-Wl,--gdb-index
 	-Wl,--warn-shared-textrel
 	-Wl,--gc-sections
-   -Wl,-rpath-link,${VICOS_SDK}/sysroot/lib
-   -Wl,-rpath-link,${VICOS_SDK}/sysroot/usr/lib)
+    -Wl,-rpath-link,${VICOS_SDK}/sysroot/lib
+    -Wl,-rpath-link,${VICOS_SDK}/sysroot/usr/lib)
 #	-Wl,--fatal-warnings)
 list(APPEND VICOS_LINKER_FLAGS_EXE
-   -Wl,-rpath-link,${VICOS_SDK}/sysroot/lib
-   -Wl,-rpath-link,${VICOS_SDK}/sysroot/usr/lib
+    -Wl,-rpath-link,${VICOS_SDK}/sysroot/lib
+    -Wl,-rpath-link,${VICOS_SDK}/sysroot/usr/lib
 	-Wl,-z,nocopyreloc)
 
 # Debug and release flags.

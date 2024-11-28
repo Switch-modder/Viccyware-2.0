@@ -195,11 +195,6 @@
       "feature_gate": "Messaging"
     },
     {
-      "user_intent": "test_wire",
-      "cloud_intent": "intent_test_wire",
-      "app_intent": "intent_test_wire"
-    },
-    {
       "user_intent": "message_playback",
       "cloud_intent": "intent_message_playmessage_extend",
       "app_intent": "intent_message_playmessage",

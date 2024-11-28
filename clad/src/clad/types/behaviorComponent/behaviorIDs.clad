@@ -16,9 +16,9 @@ enum uint_16 BehaviorID {
   Wait_TestInjectable,
 
   // devBehaviors
-  AcousticTestMode,
   CubeDrive,
   CubeDriveCoordinator,
+  AcousticTestMode,
   DevBaseBehavior,
   DevBatteryLogging,
   DevCubeSpinner,
@@ -485,9 +485,6 @@ enum uint_16 BehaviorID {
   // victorBehaviorTree/weather
   WeatherResponses,
   WeatherTextToSpeech,
-
-  // victorBehaviorTree
-  WireTest,
 }
 
 }

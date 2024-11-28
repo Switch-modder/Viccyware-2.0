@@ -25,7 +25,7 @@ int main(int argc, char* argv[]) {
 
     // Initialize Snowboy detector
     snowboy::SnowboyDetect detector(resource_filename, model_filename);
-    detector.SetSensitivity("0.40"); // Adjust as needed
+    detector.SetSensitivity("0.45"); // Adjust as needed
     detector.SetAudioGain(1.0);
     detector.ApplyFrontend(false);
 
