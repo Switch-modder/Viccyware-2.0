@@ -15,6 +15,7 @@ mkdir -p "${OUT_PATH}"
 mkdir "${OUT_PATH}/dev"
 mkdir "${OUT_PATH}/oskr"
 mkdir "${OUT_PATH}/dvt3"
+mkdir "${OUT_PATH}/dvt2"
 
 # stage
 
@@ -32,7 +33,7 @@ fi
 OTA_PATH="$(pwd)/work"
 STAGING_PATH="${VIC_PATH}/_build/staging/Release"
 
-for target in 0 2 4; do
+for target in 0 2 4 5; do
     case $target in
         0)
             output_file="${OUT_PATH}/dev/$1.ota"
@@ -45,6 +46,9 @@ for target in 0 2 4; do
             ;;
         4)
             output_file="${OUT_PATH}/dvt3/$1.ota"
+            ;;
+        5)
+            output_file="${OUT_PATH}/dvt2/$1.ota"
             ;;
     esac
 
