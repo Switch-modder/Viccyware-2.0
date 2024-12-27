@@ -77,10 +77,14 @@ namespace LTENC GPIO_DEFINE(C, 15);
 
 // Power
 namespace POWER_EN GPIO_DEFINE(A, 6);
-namespace nCHG_PWR GPIO_DEFINE(B, 9);
+namespace CHG_PWR GPIO_DEFINE(B, 9);
 namespace nVENC_EN GPIO_DEFINE(C, 13);
 namespace VEXT_SENSE GPIO_DEFINE(A, 2);
 namespace VMAIN_SENSE GPIO_DEFINE(A, 4);
+namespace CHG_EN GPIO_DEFINE(A, 15);
+
+namespace CHRG1 GPIO_DEFINE(F, 1);
+namespace CHRG2 GPIO_DEFINE(F, 0);
 
 namespace MAIN_EN_VIC GPIO_DEFINE(A, 3);
 namespace MAIN_EN_WIS GPIO_DEFINE(A, 12);

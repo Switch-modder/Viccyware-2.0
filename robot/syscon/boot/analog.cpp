@@ -131,20 +131,34 @@ void Analog::init(void) {
                      | DMA_CCR_CIRC;
   DMA1_Channel1->CCR |= DMA_CCR_EN;
 
+  is_charging = chargeAllowed && on_charger;
+  if (is_charging) {
+    CHG_PWR::set();
+  } else {
+    CHG_PWR::reset();
+
   #ifdef BOOTLOADER
+  POWER_EN::mode(MODE_INPUT);
+  POWER_EN::pull(PULL_UP);
+
   has_booted = DFU_ENTRY_POINT == DFU_FLAG;
   allow_power = has_booted;
   #else
   allow_power = true;
   #endif
 
+  CHG_EN::type(TYPE_OPENDRAIN);
+  CHG_PWR::type(TYPE_OPENDRAIN);
+
+  CHG_EN::mode(MODE_OUTPUT);
+
   NVIC_DisableIRQ(ADC1_IRQn);
   NVIC_SetPriority(ADC1_IRQn, PRIORITY_ADC);
 
   // Configure all our GPIO to what it needs to be
-  nCHG_PWR::type(TYPE_PUSHPULL);
-  nCHG_PWR::mode(MODE_OUTPUT);
-  nCHG_PWR::reset();
+  CHG_PWR::type(TYPE_PUSHPULL);
+  CHG_PWR::mode(MODE_OUTPUT);
+  CHG_PWR::reset();
 
   BODY_TX::alternate(0);  // USART1_TX
   BODY_TX::speed(SPEED_HIGH);
@@ -260,6 +274,16 @@ void Analog::inhibitCharge(bool force) {
 }
 #endif
 
+void Analog::allowCharge(bool enable) {
+  chargeAllowed = enable;
+
+  if (enable) {
+    CHG_EN::set();
+  } else {
+    CHG_EN::reset();
+  }
+
+  vext_debounce = 0;
 void Analog::setPower(bool powered) {
   allow_power = powered;
 }
@@ -306,7 +330,7 @@ void Analog::tick(void) {
   }
 
   if (emergency_shutoff) {
-    nCHG_PWR::set();
+    CHG_PWR::set();
     POWER_EN::reset();
     POWER_EN::mode(MODE_OUTPUT);
     POWER_EN::pull(PULL_NONE);
@@ -315,12 +339,12 @@ void Analog::tick(void) {
 
     if (on_charger) {
       // Powered off charger to stop reboot loop
-      nCHG_PWR::reset();
+      CHG_PWR::reset();
       POWER_EN::pull(PULL_NONE);
       POWER_EN::mode(MODE_INPUT);
     } else {
       // Explicitly powered down
-      nCHG_PWR::set();
+      CHG_PWR::set();
       POWER_EN::reset();
       POWER_EN::mode(MODE_OUTPUT);
       POWER_EN::pull(PULL_NONE);
@@ -330,7 +354,7 @@ void Analog::tick(void) {
   } else if (!on_charger) {
     NVIC_DisableIRQ(ADC1_IRQn);
     // Powered, off charger
-    nCHG_PWR::set();
+    CHG_PWR::set();
 
     POWER_EN::pull(PULL_UP);
     POWER_EN::mode(MODE_INPUT);
@@ -373,7 +397,7 @@ void Analog::tick(void) {
     }
   } else if (CHARGE_CUTOFF) {
     // Unpowered, on charger (timeout)
-    nCHG_PWR::reset();
+    CHG_PWR::reset();
     POWER_EN::pull(PULL_NONE);
     POWER_EN::mode(MODE_INPUT);
 
@@ -396,14 +420,14 @@ void Analog::tick(void) {
     }
 
     if (disable_charger) {
-      nCHG_PWR::set();
+      CHG_PWR::set();
       is_charging = false;
     } else {
-      nCHG_PWR::reset();
+      CHG_PWR::reset();
       is_charging = true;
     }
     #else
-    nCHG_PWR::reset();
+    CHG_PWR::reset();
     is_charging = true;
     #endif
 
