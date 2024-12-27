@@ -15,7 +15,7 @@ import math
 
 VICTOR_EPOCH = 1498237200 #2017-06-23 10:00a PST
 BUILD_TIME = int(time.time()-VICTOR_EPOCH)
-BUILD_TIMESTAMP = "Ws{:014x}".format(BUILD_TIME)
+BUILD_TIMESTAMP = "Pr{:014x}".format(BUILD_TIME)
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-k", "--key", type=str,
@@ -151,9 +151,7 @@ if __name__ == '__main__':
 
     certificate = sign(axf_data[HEADER_LENGTH+CERT_LENGTH:], cert)
 
-    dfu_file = args.binary.replace("syscon.dfu", "syscon-" + BUILD_TIMESTAMP + ".dfu")
-    
-    with open(dfu_file, "wb") as fo:
+    with open(args.binary, "wb") as fo:
         fo.write(axf_data)
         fo.seek(0)
         fo.write(version)

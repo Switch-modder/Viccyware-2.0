@@ -13,9 +13,7 @@ const int COUNT_BITS = 10;    // 2^x max number of readings in boxcar (in bits)
 const int GAIN_BITS = 3;      // 2^x gain (in bits)
 
 void Touch::init(void) {
-  if (!IS_WHISKEY) {
-    CAPO_VIC::set();
-  }
+  CAPO::set();
   CAPI::reset();
   
   TIM16->PSC = 0;
