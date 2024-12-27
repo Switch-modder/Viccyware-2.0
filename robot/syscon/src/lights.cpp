@@ -68,6 +68,15 @@ extern "C" void TIM17_IRQHandler(void) {
 
 void Lights::receive(const uint8_t* data) {
   memcpy(value, data, sizeof(value));
+
+  // Detect and change white light (0xFF, 0xFF, 0xFF) to red (0xFF, 0x00, 0x00)
+  for (int ch = 0; ch < LIGHT_CHANNELS; ch++) {
+    if (value[ch][0] == 0xFF && value[ch][1] == 0xFF && value[ch][2] == 0xFF) {
+      value[ch][0] = 0xFF; // Red
+      value[ch][1] = 0x00; // Green
+      value[ch][2] = 0x00; // Blue
+    }
+  }
 }
 
 void Lights::enable() {
