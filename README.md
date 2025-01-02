@@ -1,15 +1,19 @@
-# victor
+# Victorware-2.0
 
-Welcome to `victor`. This is the home of the Anki Vector robot's source code. Original README: [README-orig.md](/README-orig.md)
+Welcome to the stable branch of `Victorware-2.0`. This is the home of a modified copy of the Vector source
+code. Original README: [README-orig.md](/README-orig.md)
 
 Check the [wiki](https://github.com/kercre123/victor/wiki) for more information about the leak, what we can do with this, and general Vector info.
 
 > [!WARNING]
 > **You CANNOT currently deploy this to a regular, non-unlocked bot.**
 
+## Branch info
+This branch of the Vector source code will attempt to reimpliment Cozmo from old versions of Cozmoware into the modern os. Unlike the main branch this branch will be updated more frequently compared to the stable branch. This can mean the code may be more buggy so if you need reliability switch to the main branch please.
+
 ## Changes
 
-- The wiki includes a list of changes I made: [Changes I Made](https://github.com/kercre123/victor/wiki/Changes-I-Made)
+- The wiki includes a list of changes that were made by a fellow community member, Wire: [Changes Wire Made](https://github.com/kercre123/victor/wiki/Changes-I-Made)
 
 ## Building (Linux)
 
@@ -19,8 +23,8 @@ Check the [wiki](https://github.com/kercre123/victor/wiki) for more information 
 
 ```
 cd ~
-git clone --recurse-submodules https://github.com/kercre123/victor -b snowboy
-cd victor
+git clone --recurse-submodules https://github.com/Switch-modder/Viccyware-2.0 -b Victorware-2.0
+cd Victorware-2.0
 git lfs install
 git lfs pull
 ```
@@ -37,7 +41,7 @@ sudo chmod 660 /var/run/docker.sock
 
 3. Run the build script:
 ```
-cd ~/victor
+cd ~/Viccyware-2.0
 ./wire/build-d.sh
 ```
 
@@ -52,8 +56,8 @@ cd ~/victor
 
 ```
 cd ~
-git clone --recurse-submodules https://github.com/kercre123/victor -b snowboy
-cd victor
+git clone --recurse-submodules https://github.com/Switch-modder/Viccyware-2.0 -b Victorware-2.0
+cd Viccyware-2.0
 git lfs install
 git lfs pull
 ```
@@ -76,7 +80,7 @@ pyenv shell 2.7.18
 
 3. Run the build script:
 ```
-cd ~/victor
+cd ~/Viccyware-2.0
 ./wire/build.sh
 ```
 
