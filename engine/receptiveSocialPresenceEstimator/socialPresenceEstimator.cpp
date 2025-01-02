@@ -245,10 +245,11 @@ void SocialPresenceEstimator::TriggerInputEvent(SocialPresenceEvent* inputEvent)
 // DAS logging for data collection
 void SocialPresenceEstimator::LogInputEvent(SocialPresenceEvent* inputEvent)
 {
-  DASMSG(rspe_inputEvent, "RSPE.InputEvent", "Receptive Social Presence Estimator Input Event");
-  DASMSG_SET(s1, inputEvent->GetName(), "Event Name");
-  // could add additional detail here if needed
-  DASMSG_SEND();
+  // no
+  // DASMSG(rspe_inputEvent, "RSPE.InputEvent", "Receptive Social Presence Estimator Input Event");
+  // DASMSG_SET(s1, inputEvent->GetName(), "Event Name");
+  // // could add additional detail here if needed
+  // DASMSG_SEND();
 }
 
 

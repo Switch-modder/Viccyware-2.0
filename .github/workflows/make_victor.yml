@@ -78,7 +78,7 @@ jobs:
           eval "$(ssh-agent -s)"
           ssh-add ~/.ssh/id_rsa
           tag_version=${{ env.tag_name }}
-          for target in dvt3 dev oskr; do
+          for target in dvt3 dev oskr dvt2; do
             local_path="ota/out/$tag_version/$target/$tag_version.ota"
             remote_path="/wire/otas/full/$target/$tag_version.ota"
             ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} "mkdir -p /wire/otas/full/$target && touch /wire/otas/dnar"

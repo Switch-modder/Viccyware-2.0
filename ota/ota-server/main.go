@@ -129,7 +129,7 @@ func GetOTA(version string, target string, diff bool) (*[]byte, error) {
 	return nil, errors.New("ota doesn't exist")
 }
 
-var TargetMap []string = []string{"dev", "oskr", "whiskey", "orange", "dvt3"}
+var TargetMap []string = []string{"dev", "oskr", "whiskey", "orange", "dvt3", "dvt2"}
 
 func targetToString(target string) string {
 	targ, err := strconv.Atoi(target)

@@ -149,7 +149,6 @@ enum uint_8 BehaviorClass {
   InspectCube,
   Keepaway,
   PounceWithProx,
-  SnakeGame,
   PuzzleMaze,
 
   // gateBehaviors
@@ -258,6 +257,7 @@ enum uint_8 BehaviorClass {
   ReactToTouchPetting,
   ReactToUnclaimedIntent,
   RobustChargerObservation,
+  SnakeGame,
   TrackCube,
   TrackFace,
   WireTest,

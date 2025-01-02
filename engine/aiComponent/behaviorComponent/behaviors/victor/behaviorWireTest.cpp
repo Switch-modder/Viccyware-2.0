@@ -12,6 +12,7 @@
 #include "engine/aiComponent/behaviorComponent/behaviors/victor/behaviorWireTest.h"
 #include "engine/actions/sayTextAction.h"
 #include "engine/aiComponent/behaviorComponent/userIntentComponent.h"
+#include "engine/actions/animActions.h"
 #include "engine/aiComponent/behaviorComponent/userIntents.h"
 #include "util/logging/logging.h"
 
@@ -71,21 +72,27 @@ void BehaviorWireTest::OnBehaviorActivated()
   _dVars = DynamicVariables();
 
   // Activate the "test_wire" intent
+  // Lets the system know that a behavior has responded to the intent
   UserIntentPtr intentData = SmartActivateUserIntent(USER_INTENT(test_wire));
   if (!intentData) {
     PRINT_NAMED_WARNING("BehaviorWireTest.OnBehaviorActivated", "No pending 'test_wire' intent found");
     return;
   }
 
-  // Say "Hello World"
-  auto* sayHelloAction = new SayTextAction("Hello World", SayTextAction::AudioTtsProcessingStyle::Default_Processed);
-  DelegateIfInControl(sayHelloAction, [](const ActionResult& result) {
-    if (result == ActionResult::SUCCESS) {
-      PRINT_NAMED_INFO("BehaviorWireTest.OnBehaviorActivated", "Successfully said 'Hello World'");
-    } else {
-      PRINT_NAMED_WARNING("BehaviorWireTest.OnBehaviorActivated", "Failed to say 'Hello World'");
+  // Define an action
+  auto* greetingAnimAction = new TriggerLiftSafeAnimationAction( AnimationTrigger::GreetAfterLongTime );
+
+  // Actually perform actions
+  DelegateIfInControl(
+    greetingAnimAction,
+    // Callback, will be activated after animation
+    // DelegateIfInControl does not hang until completion of action
+    [this](){
+      // example of defining a new action
+      auto* sayHelloAction = new SayTextAction("Hello World", SayTextAction::AudioTtsProcessingStyle::Default_Processed);
+      DelegateIfInControl(sayHelloAction);
     }
-  });
+  );
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
