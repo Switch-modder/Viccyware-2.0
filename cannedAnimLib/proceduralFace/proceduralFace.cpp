@@ -96,8 +96,8 @@ namespace {
   ProceduralFace::Parameter::NumParameters> kEyeParamInfoLUT {
     {ProceduralFace::Parameter::EyeCenterX,        { false, false,  0.f,  0.f, EyeParamCombineMethod::Add,      {-static_cast<ProceduralFace::Value>(FACE_DISPLAY_WIDTH)/2, static_cast<ProceduralFace::Value>(FACE_DISPLAY_WIDTH)/2 }    }     },
     {ProceduralFace::Parameter::EyeCenterY,        { false, false,  0.f,  0.f, EyeParamCombineMethod::Add,      {-static_cast<ProceduralFace::Value>(FACE_DISPLAY_HEIGHT)/2,static_cast<ProceduralFace::Value>(FACE_DISPLAY_HEIGHT)/2}    }     },
-    {ProceduralFace::Parameter::EyeScaleX,         { false, false,  0.88f,  0.f, EyeParamCombineMethod::Multiply, {0.f, 10.f}    }     },
-    {ProceduralFace::Parameter::EyeScaleY,         { false, false,  0.88f,  0.f, EyeParamCombineMethod::Multiply, {0.f, 10.f}    }     },
+    {ProceduralFace::Parameter::EyeScaleX,         { false, false,  1.f,  0.f, EyeParamCombineMethod::Multiply, {0.f, 10.f}    }     },
+    {ProceduralFace::Parameter::EyeScaleY,         { false, false,  1.f,  0.f, EyeParamCombineMethod::Multiply, {0.f, 10.f}    }     },
     {ProceduralFace::Parameter::EyeAngle,          { true,  false,  0.f,  0.f, EyeParamCombineMethod::Add,      {-360, 360}    }     },
     {ProceduralFace::Parameter::LowerInnerRadiusX, { false, false,  0.f,  0.f, EyeParamCombineMethod::None,     {0.f, 1.f}    }     },
     {ProceduralFace::Parameter::LowerInnerRadiusY, { false, false,  0.f,  0.f, EyeParamCombineMethod::None,     {0.f, 1.f}    }     },
@@ -755,8 +755,8 @@ void ProceduralFace::RegisterFaceWithConsoleVars()
   AddConsoleVar<float>(_faceCenter[0], "kProcFace_CenterX", CONSOLE_GROUP, -100.f, 100.f);
   AddConsoleVar<float>(_faceCenter[1], "kProcFace_CenterY", CONSOLE_GROUP, -100.f, 100.f);
   AddConsoleVar<float>(_faceAngle_deg, "kProcFace_Angle_deg", CONSOLE_GROUP, -90.f, 90.f);
-  AddConsoleVar<float>(_faceScale[0], "kProcFace_ScaleX", CONSOLE_GROUP, 0.88f, 4.f);
-  AddConsoleVar<float>(_faceScale[1],"kProcFace_ScaleY", CONSOLE_GROUP, 0.88f, 4.f);
+  AddConsoleVar<float>(_faceScale[0], "kProcFace_ScaleX", CONSOLE_GROUP, 0.f, 4.f);
+  AddConsoleVar<float>(_faceScale[1],"kProcFace_ScaleY", CONSOLE_GROUP, 0.f, 4.f);
   AddConsoleVar<float>(_hue, "kProcFace_Hue", CONSOLE_GROUP, 0.f, 1.f);
   AddConsoleVar<float>(_saturation, "kProcFace_Saturation", CONSOLE_GROUP, 0., 1.f);
 
