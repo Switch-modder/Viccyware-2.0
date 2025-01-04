@@ -23,7 +23,7 @@ This branch of the Vector source code will attempt to reimpliment Cozmo from old
 
 ```
 cd ~
-git clone --recurse-submodules https://github.com/Switch-modder/Viccyware-2.0 -b Victorware-2.0
+git clone --recurse-submodules https://github.com/Switch-modder/Viccyware-2.0 -b Victorware-2.0-tester
 cd Victorware-2.0
 git lfs install
 git lfs pull
@@ -56,7 +56,7 @@ cd ~/Viccyware-2.0
 
 ```
 cd ~
-git clone --recurse-submodules https://github.com/Switch-modder/Viccyware-2.0 -b Victorware-2.0
+git clone --recurse-submodules https://github.com/Switch-modder/Viccyware-2.0 -b Victorware-2.0-tester
 cd Viccyware-2.0
 git lfs install
 git lfs pull
