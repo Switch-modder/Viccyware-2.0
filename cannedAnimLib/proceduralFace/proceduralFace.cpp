@@ -755,8 +755,8 @@ void ProceduralFace::RegisterFaceWithConsoleVars()
   AddConsoleVar<float>(_faceCenter[0], "kProcFace_CenterX", CONSOLE_GROUP, -100.f, 100.f);
   AddConsoleVar<float>(_faceCenter[1], "kProcFace_CenterY", CONSOLE_GROUP, -100.f, 100.f);
   AddConsoleVar<float>(_faceAngle_deg, "kProcFace_Angle_deg", CONSOLE_GROUP, -90.f, 90.f);
-  AddConsoleVar<float>(_faceScale[0], "kProcFace_ScaleX", CONSOLE_GROUP, 0.f, 4.f);
-  AddConsoleVar<float>(_faceScale[1],"kProcFace_ScaleY", CONSOLE_GROUP, 0.f, 4.f);
+  AddConsoleVar<float>(_faceScale[0], "kProcFace_ScaleX", CONSOLE_GROUP, 0.88f, 4.f);
+  AddConsoleVar<float>(_faceScale[1],"kProcFace_ScaleY", CONSOLE_GROUP, 0.88f, 4.f);
   AddConsoleVar<float>(_hue, "kProcFace_Hue", CONSOLE_GROUP, 0.f, 1.f);
   AddConsoleVar<float>(_saturation, "kProcFace_Saturation", CONSOLE_GROUP, 0., 1.f);
 
