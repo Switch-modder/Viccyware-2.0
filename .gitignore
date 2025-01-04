@@ -416,3 +416,7 @@ robot_sshkey
 ota/out
 ota/ota-server/*.ota
 snowboy/server/main
+3rd/snowboy/snowboyModels/.DS_Store
+3rd/.DS_Store
+3rd/snowboy/.DS_Store
+3rd/.DS_Store
