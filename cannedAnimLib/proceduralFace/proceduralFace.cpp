@@ -61,7 +61,7 @@ void ProceduralFace::SaturationConsoleFunction(ConsoleFunctionContextRef context
 namespace {
 # define CONSOLE_GROUP "Face.ParameterizedFace"
 
-  CONSOLE_VAR_RANGED(s32, kProcFace_NominalEyeSpacing, CONSOLE_GROUP, 97, -FACE_DISPLAY_WIDTH, FACE_DISPLAY_WIDTH);  // V1: 64;
+  CONSOLE_VAR_RANGED(s32, kProcFace_NominalEyeSpacing, CONSOLE_GROUP, 92, -FACE_DISPLAY_WIDTH, FACE_DISPLAY_WIDTH);  // V1: 64;
 
 # undef CONSOLE_GROUP
 
