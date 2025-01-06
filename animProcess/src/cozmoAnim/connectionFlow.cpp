@@ -62,6 +62,12 @@ bool DrawStartPairingScreen(Anim::AnimationStreamer* animStreamer)
     return false;
   }
   
+  // Replace "Vector" with "Cozmo" if it exists in the robot name
+  size_t pos = robotName.find("Vector");
+  if(pos != std::string::npos) {
+    robotName.replace(pos, 6, "Cozmo");
+  }
+  
   s_enteredAnyScreen = true;  
 
   auto* img = new Vision::ImageRGBA(FACE_DISPLAY_HEIGHT, FACE_DISPLAY_WIDTH);
@@ -99,7 +105,13 @@ void DrawShowPinScreen(Anim::AnimationStreamer* animStreamer, const Anim::AnimCo
             (FACE_DISPLAY_HEIGHT - key.GetNumRows())/2);
   img->DrawSubImage(key, p);
 
-  img->DrawTextCenteredHorizontally(OSState::getInstance()->GetRobotName(), CV_FONT_NORMAL, kRobotNameScale, 1, kColor, 15, false);
+  std::string robotName = OSState::getInstance()->GetRobotName();
+  // Replace "Vector" with "Cozmo" if it exists in the robot name
+  size_t pos = robotName.find("Vector");
+  if(pos != std::string::npos) {
+    robotName.replace(pos, 6, "Cozmo");
+  }
+  img->DrawTextCenteredHorizontally(robotName, CV_FONT_NORMAL, kRobotNameScale, 1, kColor, 15, false);
 
   img->DrawTextCenteredHorizontally(pin, CV_FONT_NORMAL, 0.8f, 1, kColor, FACE_DISPLAY_HEIGHT-5, false);
 
