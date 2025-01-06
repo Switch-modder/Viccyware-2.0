@@ -30,7 +30,7 @@
 //#endif
 
 #define AUDIO_DEBUGGING_ENABLED ( AUDIO_DEVELOPER_CODE && 0 )   // Print detailed audio information
-#define AUDIO_LOGGING_ENABLED ( AUDIO_DEVELOPER_CODE && 1 )     // Print lightweight audio state information
+#define AUDIO_LOGGING_ENABLED ( AUDIO_DEVELOPER_CODE && 0 )     // Print lightweight audio state information
 #define DISABLE_AUDIO_SYSTEM ( AUDIO_DEVELOPER_CODE && 0 )      // Disable the audio system entirely
 #define DISABLE_SOUNDS ( AUDIO_DEVELOPER_CODE && 0 )            // Disable the playback of sound events
 #define DISABLE_MUSIC ( AUDIO_DEVELOPER_CODE && 0 )             // Disable the playback of music
