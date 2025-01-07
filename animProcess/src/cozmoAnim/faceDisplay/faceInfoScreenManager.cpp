@@ -240,10 +240,10 @@ void FaceInfoScreenManager::Init(Anim::AnimContext* context, Anim::AnimationStre
   }
   else
   {
-    ADD_SCREEN(Camera, modder);
+    ADD_SCREEN(Camera, Kercre123);
   }
 
-  ADD_SCREEN_WITH_TEXT(modder, Main, {"BRANCH: Victorware-2.0-tester"});
+  ADD_SCREEN_WITH_TEXT(Kercre123, Main, {"BRANCH: Victorware-2.0-tester"});
 
 
   // ========== Screen Customization ========= 
