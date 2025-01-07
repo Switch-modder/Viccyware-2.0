@@ -985,8 +985,8 @@ bool WwiseComponent::SetGameObjectOutputBusVolume( AudioGameObject emitterGameOb
   if ( _isInitialized )
   {
     AKRESULT result = AK::SoundEngine::SetGameObjectOutputBusVolume( emitterGameObj, listenerGameObj, controlVolume );
-    AUDIO_LOG( "WwiseComponent.SetGameObjectOutputBusVolume: Set EmitterGameObj %u listenerGameObj %u output bus volume %f, result %d",
-              emitterGameObj, listenerGameObj, controlVolume, result );
+//   AUDIO_LOG( "WwiseComponent.SetGameObjectOutputBusVolume: Set EmitterGameObj %u listenerGameObj %u output bus volume %f, result %d",
+//              emitterGameObj, listenerGameObj, controlVolume, result );
     success = ( AKRESULT::AK_Success == result);
   }
   
