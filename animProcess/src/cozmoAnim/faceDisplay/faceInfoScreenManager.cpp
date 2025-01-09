@@ -243,7 +243,11 @@ void FaceInfoScreenManager::Init(Anim::AnimContext* context, Anim::AnimationStre
     ADD_SCREEN(Camera, Kercre123);
   }
 
+<<<<<<< HEAD
   ADD_SCREEN(Kercre123, Main);
+=======
+  ADD_SCREEN_WITH_TEXT(Kercre123, Main, {"BRANCH: Victorware-2.0-tester"});
+>>>>>>> parent of 158234be67 (Update faceInfoScreenManager.cpp)
 
 
   // ========== Screen Customization ========= 
@@ -295,18 +299,6 @@ void FaceInfoScreenManager::Init(Anim::AnimContext* context, Anim::AnimationStre
   // === Main screen ===
   auto mainEnterFcn = [this]() {
     DrawMain();
-  };
-  SET_ENTER_ACTION(Main, mainEnterFcn);
-
-  ADD_MENU_ITEM(Main, "EXIT", None);
-#if ENABLE_SELF_TEST
-  ADD_MENU_ITEM(Main, "SELF TEST", SelfTest);
-#endif
-  ADD_MENU_ITEM(Main, "CLEAR OUT SOUL", ClearUserData);
-  
-// === Build info ===
-auto mainEnterFcn = [this]() {
-    DrawKercre123();
   };
   SET_ENTER_ACTION(Main, mainEnterFcn);
 
@@ -1235,9 +1227,6 @@ void FaceInfoScreenManager::Update(const RobotState& state)
       break;
     case ScreenName::IMUInfo:
       DrawIMUInfo(state);
-      break;
-    case ScreenName::Kercre123:
-      DrawKercre123();
       break;
     case ScreenName::MotorInfo:
       DrawMotorInfo(state);
