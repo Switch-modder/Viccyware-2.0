@@ -236,7 +236,7 @@ void FaceInfoScreenManager::Init(Anim::AnimContext* context, Anim::AnimationStre
   if(IsWhiskey())
   {
     ADD_SCREEN(Camera, ToF);
-    ADD_SCREEN(ToF, Main);    // Last screen cycles back to Main
+    ADD_SCREEN(ToF, Kercre123);    // Go to the repo screens before main
   }
   else
   {
