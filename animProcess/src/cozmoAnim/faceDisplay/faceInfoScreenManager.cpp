@@ -1250,6 +1250,13 @@ void FaceInfoScreenManager::DrawMain()
   auto *osstate = OSState::getInstance();
 
   std::string esn = osstate->GetSerialNumberAsString();
+
+  if (esn == "00000001") {
+      esn = "Whitebot";
+  }
+
+  faceInfoText += "ESN: " + esn + '\n';
+	
   if(esn.empty())
   {
     // TODO Remove once DVT2s are phased out
