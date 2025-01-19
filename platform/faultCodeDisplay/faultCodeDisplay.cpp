@@ -25,7 +25,7 @@ namespace Vector {
 
 namespace {
   constexpr const char * kSupportURL = "error.viccyware.com";
-  constexpr const char * kVectorWillRestart = "Vector will restart";
+  constexpr const char * kVectorWillRestart = "Cozmo will restart";
 
   // Map of fault codes that map to images that should be drawn instead of the number
   std::unordered_map<uint16_t, std::string> kFaultImageMap = {
