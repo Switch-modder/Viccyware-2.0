@@ -33,7 +33,7 @@
 #include "opencv2/imgproc.hpp"
 #include "opencv2/highgui.hpp"
 
-#include "anki/shared/factory/emrHelper.h"
+#include "anki/cozmo/shared/factory/emrHelper.h"
 
 #include "osState/osState.h"
 
@@ -65,7 +65,7 @@ bool DrawStartPairingScreen(Anim::AnimationStreamer* animStreamer)
   // Replace "Vector" with "Cozmo" if it exists in the robot name
   size_t pos = robotName.find("Vector");
   if(pos != std::string::npos) {
-    robotName.replace(pos, 6, "Cozmo 2.0");
+    robotName.replace(pos, 6, "Cozmo");
   }
   
   s_enteredAnyScreen = true;  
@@ -109,7 +109,7 @@ void DrawShowPinScreen(Anim::AnimationStreamer* animStreamer, const Anim::AnimCo
   // Replace "Vector" with "Cozmo" if it exists in the robot name
   size_t pos = robotName.find("Vector");
   if(pos != std::string::npos) {
-    robotName.replace(pos, 6, "Cozmo 2.0");
+    robotName.replace(pos, 6, "Cozmo");
   }
   img->DrawTextCenteredHorizontally(robotName, CV_FONT_NORMAL, kRobotNameScale, 1, kColor, 15, false);
 
