@@ -1,4 +1,25 @@
 {
   "behaviorID" : "SnakeGame",
   "behaviorClass": "SnakeGame"
+
+  "cooldown_hours": 0.05,  // TEMP: 
+
+  "probability": 0.7, // TEMP: 
+  "period_hours": 0.01, // TEMP: 
+  
+
+  "wantsToBeActivatedCondition": {
+    "conditionType": "Compound",
+    "and": [
+      {
+        "conditionType": "OffTreadsState",
+        "targetState": "OnTreads"
+      },
+      {
+        "conditionType": "Emotion",
+        "emotion": "Stimulated",
+        "min": 0.5
+      }
+    ]
+  }
 }
