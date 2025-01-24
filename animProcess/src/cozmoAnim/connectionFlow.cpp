@@ -33,7 +33,7 @@
 #include "opencv2/imgproc.hpp"
 #include "opencv2/highgui.hpp"
 
-#include "anki//shared/factory/emrHelper.h"
+#include "anki/shared/factory/emrHelper.h"
 
 #include "osState/osState.h"
 
