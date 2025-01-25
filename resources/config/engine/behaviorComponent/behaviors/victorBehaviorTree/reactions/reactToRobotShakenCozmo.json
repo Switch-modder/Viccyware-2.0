@@ -1,0 +1,40 @@
+{
+  "behaviorClass": "ReactToRobotShaken",
+  "behaviorID": "ReactToRobotShakenCozmo",
+
+  "associatedActiveFeature": "RobotShaken",
+  "emotionEventOnActivated": "RobotShaken",
+
+  "renderInEyeHue" : true,
+  "getInAnimation" : "ReactToShake_GetIn",
+  "shakeAnimations" :
+  [
+    {
+      "threshold" : 13000,
+      "looping"   : "anim_dizzy_shake_loop_01",
+      "waiting"   : "ReactToShake_Lvl1Waiting",
+      "inHand"    : "anim_dizzy_reaction_soft_01",
+      "onGround"  : "anim_dizzy_reaction_soft_01"
+    },
+    {
+      "threshold" : 19000,
+      "looping"   : "anim_dizzy_shake_loop_01",
+      "waiting"   : "ReactToShake_Lvl2Waiting",
+      "inHand"    : "anim_dizzy_reaction_medium_01",
+      "onGround"  : "anim_dizzy_reaction_medium_01"
+    },
+    {
+      "threshold" : 22000,
+      "looping"   : "anim_dizzy_shake_loop_01",
+      "waiting"   : "ReactToShake_Lvl3Waiting",
+      "inHand"    : "anim_dizzy_reaction_hard_01",
+      "onGround"  : "anim_dizzy_reaction_hard_01"
+    }
+  ],
+
+  "wantsToBeActivatedCondition":
+  {
+    "conditionType" : "RobotShaken",
+    "minAccelMagnitudeThreshold" : 16000
+  }
+}
