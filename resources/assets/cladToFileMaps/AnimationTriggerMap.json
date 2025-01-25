@@ -436,56 +436,108 @@
     "AnimName": "ag_dancebeat_nobeatdetected"
   },
   {
+    "CladEvent": "OLD_ReactToShake_GetIn",
+    "AnimName": "ag_rtshake_getin"
+  },
+  {
+    "CladEvent": "OLD_ReactToShake_Lvl1Loop",
+    "AnimName": "ag_rtshake_lv1loop"
+  },
+  {
+    "CladEvent": "OLD_ReactToShake_Lvl1Waiting",
+    "AnimName": "ag_rtshake_lv1pregetout"
+  },
+  {
+    "CladEvent": "OLD_ReactToShake_Lvl1InHand",
+    "AnimName": "ag_rtshake_lv1rtonhand"
+  },
+  {
+    "CladEvent": "OLD_ReactToShake_Lvl1OnGround",
+    "AnimName": "ag_rtshake_lv1rtonground"
+  },
+  {
+    "CladEvent": "OLD_ReactToShake_Lvl2Loop",
+    "AnimName": "ag_rtshake_lv2loop"
+  },
+  {
+    "CladEvent": "OLD_ReactToShake_Lvl2Waiting",
+    "AnimName": "ag_rtshake_lv2pregetout"
+  },
+  {
+    "CladEvent": "OLD_ReactToShake_Lvl2InHand",
+    "AnimName": "ag_rtshake_lv2rtonhand"
+  },
+  {
+    "CladEvent": "OLD_ReactToShake_Lvl2OnGround",
+    "AnimName": "ag_rtshake_lv2rtonground"
+  },
+  {
+    "CladEvent": "OLD_ReactToShake_Lvl3Loop",
+    "AnimName": "ag_rtshake_lv3loop"
+  },
+  {
+    "CladEvent": "OLD_ReactToShake_Lvl3Waiting",
+    "AnimName": "ag_rtshake_lv3pregetout"
+  },
+  {
+    "CladEvent": "OLD_ReactToShake_Lvl3InHand",
+    "AnimName": "ag_rtshake_lv3rtonhand"
+  },
+  {
+    "CladEvent": "OLD_ReactToShake_Lvl3OnGround",
+    "AnimName": "ag_rtshake_lv3rtonground"
+  },
+    {
     "CladEvent": "ReactToShake_GetIn",
     "AnimName": "ag_rtshake_getin"
   },
   {
     "CladEvent": "ReactToShake_Lvl1Loop",
-    "AnimName": "ag_rtshake_lv1loop"
+    "AnimName": "anim_dizzy_shake_loop_01"
   },
   {
     "CladEvent": "ReactToShake_Lvl1Waiting",
-    "AnimName": "ag_rtshake_lv1pregetout"
+    "AnimName": "anim_dizzy_shake_stop_01"
   },
   {
     "CladEvent": "ReactToShake_Lvl1InHand",
-    "AnimName": "ag_rtshake_lv1rtonhand"
+    "AnimName": "anim_dizzy_reaction_soft_02"
   },
   {
     "CladEvent": "ReactToShake_Lvl1OnGround",
-    "AnimName": "ag_rtshake_lv1rtonground"
+    "AnimName": "anim_dizzy_reaction_soft_02"
   },
   {
     "CladEvent": "ReactToShake_Lvl2Loop",
-    "AnimName": "ag_rtshake_lv2loop"
+    "AnimName": "anim_dizzy_shake_loop_01"
   },
   {
     "CladEvent": "ReactToShake_Lvl2Waiting",
-    "AnimName": "ag_rtshake_lv2pregetout"
+    "AnimName": "anim_dizzy_shake_stop_01"
   },
   {
     "CladEvent": "ReactToShake_Lvl2InHand",
-    "AnimName": "ag_rtshake_lv2rtonhand"
+    "AnimName": "anim_dizzy_reaction_medium_01"
   },
   {
     "CladEvent": "ReactToShake_Lvl2OnGround",
-    "AnimName": "ag_rtshake_lv2rtonground"
+    "AnimName": "anim_dizzy_reaction_medium_01"
   },
   {
     "CladEvent": "ReactToShake_Lvl3Loop",
-    "AnimName": "ag_rtshake_lv3loop"
+    "AnimName": "anim_dizzy_shake_loop_01"
   },
   {
     "CladEvent": "ReactToShake_Lvl3Waiting",
-    "AnimName": "ag_rtshake_lv3pregetout"
+    "AnimName": "anim_dizzy_shake_stop_01"
   },
   {
     "CladEvent": "ReactToShake_Lvl3InHand",
-    "AnimName": "ag_rtshake_lv3rtonhand"
+    "AnimName": "anim_dizzy_reaction_hard_01"
   },
   {
     "CladEvent": "ReactToShake_Lvl3OnGround",
-    "AnimName": "ag_rtshake_lv3rtonground"
+    "AnimName": "anim_dizzy_reaction_hard_01"
   },
   {
     "CladEvent": "ReactToShakeSnowGlobe_GetIn",
