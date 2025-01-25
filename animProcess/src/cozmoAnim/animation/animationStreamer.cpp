@@ -362,7 +362,7 @@ namespace Anim {
   CONSOLE_VAR(bool, kShouldDisplayPlaybackTime, "AnimationStreamer", false);
 
   // Disable streaming of backpack lights keyframes by default
-  CONSOLE_VAR(bool, kEnableBackpackLightsTrack, "AnimationStreamer", false);
+  CONSOLE_VAR(bool, kEnableBackpackLightsTrack, "AnimationStreamer", true);
 
   } // namespace
 
