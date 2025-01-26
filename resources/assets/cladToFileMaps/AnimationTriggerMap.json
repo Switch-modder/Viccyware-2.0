@@ -493,51 +493,51 @@
   },
   {
     "CladEvent": "ReactToShake_Lvl1Loop",
-    "AnimName": "anim_dizzy_shake_loop_01"
+    "AnimName": "ag_dizzy_shake_loop"
   },
   {
     "CladEvent": "ReactToShake_Lvl1Waiting",
-    "AnimName": "anim_dizzy_shake_stop_01"
+    "AnimName": "ag_dizzy_shake_stop"
   },
   {
     "CladEvent": "ReactToShake_Lvl1InHand",
-    "AnimName": "anim_dizzy_reaction_soft_02"
+    "AnimName": "ag_dizzy_reaction_soft"
   },
   {
     "CladEvent": "ReactToShake_Lvl1OnGround",
-    "AnimName": "anim_dizzy_reaction_soft_02"
+    "AnimName": "ag_dizzy_reaction_soft"
   },
   {
     "CladEvent": "ReactToShake_Lvl2Loop",
-    "AnimName": "anim_dizzy_shake_loop_01"
+    "AnimName": "ag_dizzy_shake_loop"
   },
   {
     "CladEvent": "ReactToShake_Lvl2Waiting",
-    "AnimName": "anim_dizzy_shake_stop_01"
+    "AnimName": "ag_dizzy_shake_stop"
   },
   {
     "CladEvent": "ReactToShake_Lvl2InHand",
-    "AnimName": "anim_dizzy_reaction_medium_01"
+    "AnimName": "ag_dizzy_reaction_medium"
   },
   {
     "CladEvent": "ReactToShake_Lvl2OnGround",
-    "AnimName": "anim_dizzy_reaction_medium_01"
+    "AnimName": "ag_dizzy_reaction_medium"
   },
   {
     "CladEvent": "ReactToShake_Lvl3Loop",
-    "AnimName": "anim_dizzy_shake_loop_01"
+    "AnimName": "ag_dizzy_shake_loop"
   },
   {
     "CladEvent": "ReactToShake_Lvl3Waiting",
-    "AnimName": "anim_dizzy_shake_stop_01"
+    "AnimName": "ag_dizzy_shake_stop"
   },
   {
     "CladEvent": "ReactToShake_Lvl3InHand",
-    "AnimName": "anim_dizzy_reaction_hard_01"
+    "AnimName": "ag_dizzy_reaction_hard"
   },
   {
     "CladEvent": "ReactToShake_Lvl3OnGround",
-    "AnimName": "anim_dizzy_reaction_hard_01"
+    "AnimName": "ag_dizzy_reaction_hard"
   },
   {
     "CladEvent": "ReactToShakeSnowGlobe_GetIn",
