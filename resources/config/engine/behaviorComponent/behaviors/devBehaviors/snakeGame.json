@@ -1,14 +1,4 @@
 {
   "behaviorID" : "SnakeGame",
   "behaviorClass": "SnakeGame"
-
-  "wantsToBeActivatedCondition": {
-    "conditionType": "Compound",
-    "and": [
-      {
-        "conditionType": "OffTreadsState",
-        "targetState": "OnTreads"
-      }
-    ]
-  }
 }

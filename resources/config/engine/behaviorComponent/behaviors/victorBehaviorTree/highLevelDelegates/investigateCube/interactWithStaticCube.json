@@ -24,7 +24,7 @@
         {
           "behavior" : "FetchCube",
           "cooldown_s" : 900.0,
-          "weight" : 0.5
+          "weight" : 1.0
         },
         {
           "behavior" : "FindCubeAndPlayKeepaway",
@@ -34,7 +34,7 @@
         {
           "behavior" : "MoveCube",
           "cooldown_s" : 300.0,
-          "weight" :  0.5
+          "weight" : 1.0
         },
         {
           "behavior" : "PopAWheelie",
