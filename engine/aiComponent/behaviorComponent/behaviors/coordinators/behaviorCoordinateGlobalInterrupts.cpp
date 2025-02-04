@@ -126,7 +126,7 @@ BehaviorCoordinateGlobalInterrupts::DynamicVariables::DynamicVariables()
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 BehaviorCoordinateGlobalInterrupts::BehaviorCoordinateGlobalInterrupts(const Json::Value& config)
-: BehaviorDispatcherPassThrough(config)
+: ICozmoBehavior(config)
 {
 }
 
@@ -138,8 +138,7 @@ BehaviorCoordinateGlobalInterrupts::~BehaviorCoordinateGlobalInterrupts()
 }
 
 
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-void BehaviorCoordinateGlobalInterrupts::InitPassThrough()
+void BehaviorCoordinateGlobalInterrupts::GetAllDelegates(std::set<IBehavior*>& delegates) const
 {
   const auto& BC = GetBEI().GetBehaviorContainer();
   _iConfig.wakeWordBehavior         = BC.FindBehaviorByID(BEHAVIOR_ID(TriggerWordDetected));
@@ -204,171 +203,22 @@ void BehaviorCoordinateGlobalInterrupts::InitPassThrough()
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-void BehaviorCoordinateGlobalInterrupts::OnPassThroughActivated()
+bool BehaviorCoordinateGlobalInterrupts::WantsToBeActivatedBehavior() const
 {
-  _iConfig.triggerWordPendingCond->SetActive(GetBEI(), true);
-
-  if( ANKI_DEV_CHEATS ) {
-    CreateConsoleVars();
-  }
+  // always wants to be activated
+  return true;
 }
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-void BehaviorCoordinateGlobalInterrupts::PassThroughUpdate()
+void BehaviorCoordinateGlobalInterrupts::OnBehaviorActivated()
 {
-  if(!IsActivated()){
-    return;
-  }
-
-  // todo: generalize "if X is running then suppress Y"
-
-  // suppress during meet victor
-  {
-    if( _iConfig.meetVictorBehavior->IsActivated() ) {
-      for( const auto& beh : _iConfig.toSuppressWhenMeetVictor ) {
-        beh->SetDontActivateThisTick(GetDebugLabel());
-      }
-    }
-  }
-
-  // Suppress behaviors if dancing to the beat
-  if( _iConfig.danceToTheBeatBehavior->IsActivated() ) {
-    for( const auto& beh : _iConfig.toSuppressWhenDancingToTheBeat ) {
-      beh->SetDontActivateThisTick(GetDebugLabel());
-    }
-  }
-
-  // Suppress ReactToObstacle if needed
-  if( ShouldSuppressProxReaction() ) {
-    _iConfig.reactToObstacleBehavior->SetDontActivateThisTick(GetDebugLabel());
-  }
-
-  // Suppress behaviors disabled via console vars
-  if( ANKI_DEV_CHEATS ) {
-    for( const auto& behPair : _iConfig.devActivatableOverrides ) {
-      if( !behPair.second && (behPair.first != nullptr) ) {
-        behPair.first->SetDontActivateThisTick( "CV:" + GetDebugLabel() );
-      }
-    }
-  }
-
-  // Suppress timer antics if necessary
-  if(_iConfig.behaviorsThatShouldSuppressTimerAntics.AreBehaviorsActivated() ) {
-    const auto tickCount = BaseStationTimer::getInstance()->GetTickCount();
-    _iConfig.timerCoordBehavior->SuppressAnticThisTick(tickCount);
-  }
-
-  // this will suppress the streaming POST-wakeword pending
-  // the "do a fist bump" part of "hey victor"
-  SmartPopResponseToTriggerWord();
-
-  {
-    auto& uic = GetBehaviorComp<UserIntentComponent>();
-
-    bool shouldSuppressTurn = false;
-
-    // certain intents do not want to turn vector after the wakeword was heard so that they can go
-    // directly into their behavior facing the same direction he was when the wakeword was heard.
-    for( const UserIntentTag& tag : kUserIntentTagsToSuppressWakeWordTurn ) {
-      shouldSuppressTurn |= uic.IsUserIntentPending(tag);
-    }
-
-    // If we are responding to "take a photo", and the user is not requesting a selfie
-    // Disable the react to voice command turn so that Victor takes the photo in his current direction
-    // Exception: If storage is full we want to turn towards the user to let them know
-    UserIntent photoIntent;
-    const bool isPhotoPending = uic.IsUserIntentPending(USER_INTENT(take_a_photo), photoIntent);
-    if(isPhotoPending){
-      const auto& takeAPhoto = photoIntent.Get_take_a_photo();
-      const bool isNotASelfie = takeAPhoto.empty_or_selfie.empty();
-      const bool isStorageFull = GetBEI().GetPhotographyManager().IsPhotoStorageFull();
-      shouldSuppressTurn |= (isNotASelfie && !isStorageFull);
-    }
-
-    if (shouldSuppressTurn) {
-      const EngineTimeStamp_t ts = BaseStationTimer::getInstance()->GetCurrentTimeStamp();
-      _iConfig.reactToVoiceCommandBehavior->DisableTurnForTimestamp(ts);
-    }
-
-    const bool isGoHomeActive = uic.IsUserIntentActive(USER_INTENT(system_charger));
-    if( isGoHomeActive ) {
-      for( const auto& beh : _iConfig.toSuppressWhenGoingHome ) {
-        beh->SetDontActivateThisTick(GetDebugLabel() + ": going home");
-      }
-    }
-  }
-
-  // disable ReactToUnexpectedMovement when intentionally bumping things
-  {
-    if( _iConfig.behaviorsThatShouldntReactToUnexpectedMovement.AreBehaviorsActivated() ) {
-      _iConfig.reactToUnexpectedMovementBehavior->SetDontActivateThisTick(GetDebugLabel());
-    }
-  }
-
-  // Suppress ReactToSoundAwake if needed
-  {
-    if( _iConfig.behaviorsThatShouldntReactToSoundAwake.AreBehaviorsActivated() ) {
-      _iConfig.reactToSoundAwakeBehavior->SetDontActivateThisTick(GetDebugLabel());
-    }
-  }
-
-  // Suppress ReactToTouchPetting if needed
-  {
-    if( _iConfig.behaviorsThatShouldntReactToTouch.AreBehaviorsActivated() ) {
-      _iConfig.reactToTouchPettingBehavior->SetDontActivateThisTick(GetDebugLabel());
-    }
-  }
-
-  // Suppress ReactToCliff if needed
-  {
-    if( _iConfig.behaviorsThatShouldntReactToCliff.AreBehaviorsActivated() ) {
-      _iConfig.reactToCliffBehavior->SetDontActivateThisTick(GetDebugLabel());
-    }
-  }
-
-  // tell BehaviorDriveToFace whenever a cliff interruption behavior is active, so that it knows when
-  // it is reasonable to resume-i-mean-wants-to-be-activated-sorry-kevin
-  {
-    if( _iConfig.reactToCliffBehavior->IsActivated() ) {
-      for( const auto& driveToFaceBehavior : _iConfig.driveToFaceBehaviors ) {
-        driveToFaceBehavior->SetInterruptionEndTick( BaseStationTimer::getInstance()->GetTickCount() );
-      }
-    }
-  }
-}
-
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-bool BehaviorCoordinateGlobalInterrupts::ShouldSuppressProxReaction()
-{
-  // scan through the stack below this behavior and return true if any behavior is active which is listed in
-  // kBehaviorClassesToSuppressProx
-
-  const auto& behaviorIterator = GetBehaviorComp<ActiveBehaviorIterator>();
-
-  // If the behavior stack has changed this tick or last tick, then update, otherwise use the last value
-  const size_t currTick = BaseStationTimer::getInstance()->GetTickCount();
-  if( behaviorIterator.GetLastTickBehaviorStackChanged() + 1 >= currTick ) {
-    _dVars.suppressProx = false;
-
-    auto callback = [this](const ICozmoBehavior& behavior) {
-      if( kBehaviorClassesToSuppressProx.find( behavior.GetClass() ) != kBehaviorClassesToSuppressProx.end() ) {
-        _dVars.suppressProx = true;
-        return false; // A behavior satisfied the condition, stop iterating
-      }
-      return true; // Haven't satisfied the condition yet, keep iterating
-    };
-
-    behaviorIterator.IterateActiveCozmoBehaviorsForward( callback, this );
-  }
-
-  return _dVars.suppressProx;
-}
-
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-void BehaviorCoordinateGlobalInterrupts::OnPassThroughDeactivated()
-{
-  _iConfig.triggerWordPendingCond->SetActive(GetBEI(), false);
+  auto& robotInfo = GetBEI().GetRobotInfo();
+  
+  robotInfo.StartDoom();
+  
+  robotInfo.GetMoveComponent().EnableLiftPower(false);
+  robotInfo.GetMoveComponent().EnableHeadPower(false);
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

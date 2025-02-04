@@ -518,47 +518,11 @@ message SetFaceHue
     float_32 hue // [0,1]
 }
 
-// SetFaceSaturation
-message SetFaceSaturation
+message StartDoom
 {
-    float_32 saturation // [0,1]
+    
 }
 
-message SetButtonWakeWord
-{
-    // no enum for now unless we add a third wakeword. true if alexa, false if "hey vector"
-    bool isAlexa,
-}
-
-structure SpriteBoxRemap
-{
-  Vision::SpriteBoxName spriteBoxName,
-  uint_8                padding,
-  uint_16               remappedAssetID
-}
-
-message PlayAnimWithSpriteBoxRemaps
-{
-  uint_8         tag,
-  uint_8         numRemaps,
-  SpriteBoxRemap spriteBoxRemaps[150],
-  bool           lockFaceAtEndOfAnim,
-  string         animName
-}
-
-message PlayAnimWithSpriteBoxKeyFrames
-{
-  Vision::SpriteBoxKeyFrame spriteBoxKeyFrames[40],
-  uint_8                    tag,
-  uint_8                    numKeyFrames,
-  string                    animName
-}
-
-message AddSpriteBoxKeyFrames
-{
-  Vision::SpriteBoxKeyFrame spriteBoxKeyFrames[50],
-  uint_8                    numKeyFrames,
-}
 
 // TODO: Move to messageGameToEngine.clad or shared file
 // DisplayFaceImageBinaryChunk
@@ -920,6 +884,8 @@ union EngineToRobot
   CheckCloudConnectivity    checkCloudConnectivity    = 0xAE,
 
   UpdatedSettings           updatedSettings           = 0xAF,
+
+  StartDoom startDoom = 0x94,
 
   // 0xB0 to 0xFE: To engine, see messageRobotToEngine.clad
 }

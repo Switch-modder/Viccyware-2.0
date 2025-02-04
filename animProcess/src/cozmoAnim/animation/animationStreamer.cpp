@@ -44,6 +44,13 @@
 #include "clad/robotInterface/messageRobotToEngine_sendAnimToEngine_helper.h"
 #include "clad/robotInterface/messageEngineToRobot_sendAnimToRobot_helper.h"
 
+#include "cozmoAnim/doom/doomPort.h"
+
+#include <opencv2/core.hpp>
+#include <opencv2/imgproc.hpp>
+#include "jo_gif/jo_gif.h"
+#include "gif-h/gif.h"
+
 #include "jo_gif/jo_gif.h"
 #include "gif-h/gif.h"
 
@@ -403,44 +410,39 @@ namespace Anim {
 
     // Set neutral face
     DEV_ASSERT(nullptr != _context, "AnimationStreamer.Init.NullContext");
-    DEV_ASSERT(nullptr != _context->GetDataLoader(), "AnimationStreamer.Init.NullRobotDataLoader");
-    const std::string neutralFaceAnimName = "anim_neutral_eyes_01";
-    _neutralFaceAnimation = _context->GetDataLoader()->GetCannedAnimation(neutralFaceAnimName);
-    if (nullptr != _neutralFaceAnimation)
-    {
-      auto frame = _neutralFaceAnimation->GetTrack<ProceduralFaceKeyFrame>().GetFirstKeyFrame();
-      ProceduralFace::SetResetData(frame->GetFace());
-    }
-    else
-    {
-      LOG_ERROR("AnimationStreamer.Constructor.NeutralFaceDataNotFound",
-                "Could not find expected neutral face animation file called %s",
-                neutralFaceAnimName.c_str());
-    }
+
+    //DEV_ASSERT(nullptr != _context->GetDataLoader(), "AnimationStreamer.Init.NullRobotDataLoader");
+    //const std::string neutralFaceAnimName = "anim_neutral_eyes_01";
+    //_neutralFaceAnimation = _context->GetDataLoader()->GetCannedAnimation(neutralFaceAnimName);
+    //if (nullptr != _neutralFaceAnimation)
+    //{
+    //  auto frame = _neutralFaceAnimation->GetTrack<ProceduralFaceKeyFrame>().GetFirstKeyFrame();
+    //  ProceduralFace::SetResetData(frame->GetFace());
+    //}
+    //else
+    //{
+    //  LOG_ERROR("AnimationStreamer.Constructor.NeutralFaceDataNotFound",
+    //            "Could not find expected neutral face animation file called %s",
+    //            neutralFaceAnimName.c_str());
+    //}
 
     // Do this after the ProceduralFace class has set to use the right neutral face
-    _proceduralTrackComponent->Init(*this);
+    //_proceduralTrackComponent->Init(*this);
 
     _faceDrawBuf.Allocate(FACE_DISPLAY_HEIGHT, FACE_DISPLAY_WIDTH);
     _procFaceImg.Allocate(FACE_DISPLAY_HEIGHT, FACE_DISPLAY_WIDTH);
     _faceImageRGB565.Allocate(FACE_DISPLAY_HEIGHT, FACE_DISPLAY_WIDTH);
     _faceImageGrayscale.Allocate(FACE_DISPLAY_HEIGHT, FACE_DISPLAY_WIDTH);
 
-    // Start with a blank face (face scale == 0) until the engine has initialized and sent an animation
-    {
-      ProceduralFace blankFace;
-      const f32 zeroScale = 0.0f;
-      const std::vector<f32> arbitraryEyes((int)ProceduralEyeParameter::NumParameters, 0.5f);
-      blankFace.SetFromValues(arbitraryEyes, arbitraryEyes, 0.0f, 0.0f, 0.0f, zeroScale, zeroScale, 0.0f);
-
-      SetProceduralFace(blankFace, std::numeric_limits<u32>::max());
-
-      ProceduralFace::SetBlankFaceData(blankFace);
-    }
-
-    if (_animAudioClient != nullptr) {
-      _animAudioClient->SetTextToSpeechComponent(ttsComponent);
-    }
+    // TODO: _Might_ need to disable this eventually if there are conflicts
+    //       with wake up animations or something on startup. The only reason
+    //       this is here is to make sure there's something on the face and
+    //       currently there's no face animation that the engine automatically
+    //       initiates on startup.
+    // 
+    // Turn on neutral face by default at startup
+    // Otherwise face is blank until an animation is played.
+    //SetStreamingAnimation(_neutralFaceAnimation, kNotAnimatingTag);
 
     return RESULT_OK;
   }
@@ -452,6 +454,11 @@ namespace Anim {
     sDevBufferFacePtr         = nullptr;
     sStreamingAnimationPtrPtr = nullptr;
   #endif // ANKI_DEV_CHEATS
+  
+    PRINT_NAMED_WARNING("DOOM","deleting doom");
+    if( _doom != nullptr ) {
+      _doom->Stop();
+    }
     Util::SafeDelete(_proceduralAnimation);
 
     FaceDisplay::removeInstance();
@@ -1639,6 +1646,87 @@ namespace Anim {
   Result AnimationStreamer::ExtractAnimationMessages(AnimationMessageWrapper& stateToSend)
   {
     Result lastResult = RESULT_OK;
+  } // UpdateStream()
+  
+  void AnimationStreamer::StartGame(const std::string& path, Anki::Cozmo::Audio::CozmoAudioController* audioController )
+  {
+    _doom.reset( new DoomPort(path, FACE_DISPLAY_WIDTH, FACE_DISPLAY_HEIGHT) );
+    _doom->SetAudioController( audioController );
+    PRINT_NAMED_WARNING("DOOM","starting game");
+    if( _doom == nullptr ) {
+      PRINT_NAMED_ERROR("DOOM","what");
+    }
+    _doom->Run();
+    if( _doom == nullptr ) {
+      PRINT_NAMED_ERROR("DOOM","what2");
+    }
+  }
+  
+  void AnimationStreamer::HandleMessage(const Anki::Cozmo::RobotState& robotState)
+  {
+    if( _doom != nullptr ) {
+      _doom->HandleMessage(robotState);
+    }
+  }
+  
+  void AnimationStreamer::DrawGameScreen()
+  {
+    auto drawColor = [this](const Anki::Vision::PixelRGB565& color) {
+      _faceDrawBuf = Vision::ImageRGB565( Anki::Cozmo::FACE_DISPLAY_HEIGHT, Anki::Cozmo::FACE_DISPLAY_WIDTH );
+      for(int i=0; i<Anki::Cozmo::FACE_DISPLAY_HEIGHT; ++i) {
+        Anki::Vision::PixelRGB565* row   = _faceDrawBuf.GetRow(i);
+        for(int j=0; j<Anki::Cozmo::FACE_DISPLAY_WIDTH; ++j) {
+          row[j]   = color;
+        }
+      }
+    };
+    if( _doom == nullptr ) {
+      // not ready yet. show gray
+      PRINT_NAMED_WARNING("DOOM","not ready, nullptr");
+      drawColor(Anki::Vision::PixelRGB565(50, 50, 50));
+      return;
+    }
+    
+    if( auto ex = _doom->GetException() ) {
+      try {
+        std::rethrow_exception( ex );
+      } catch( const std::exception& e ) {
+        PRINT_NAMED_ERROR("DOOM", "%s", e.what() );
+      }
+      // error. show all red face
+      drawColor(Anki::Vision::PixelRGB565(255,0,0));
+      return;
+    }
+    
+    _doom->GetScreen( _faceDrawBuf );
+    
+    if( _faceDrawBuf.GetNumRows() == 0 || _faceDrawBuf.GetNumCols() == 0 ) {
+      PRINT_NAMED_WARNING("DOOM", "First draw didnt complete yet");
+      drawColor(Anki::Vision::PixelRGB565(50, 50, 50));
+    }
+  }
+  
+  Result AnimationStreamer::Update()
+  {
+    Result lastResult = RESULT_OK;
+    
+    _doom->Update();
+    
+    DrawGameScreen();
+    BufferFaceToSend(_faceDrawBuf);
+    
+    // Tick audio engine
+    _audioClient->Update();
+    
+    return lastResult;
+    
+    bool streamUpdated = false;
+    
+    // TODO: Send this data up to engine via some new CozmoAnimState message
+    /*
+    const CozmoContext* cozmoContext = robot.GetContext();
+    VizManager* vizManager = robot.GetContext()->GetVizManager();
+    DEV_ASSERT(nullptr != vizManager, "Expecting a non-null VizManager");
 
     bool streamUpdated = false;
 

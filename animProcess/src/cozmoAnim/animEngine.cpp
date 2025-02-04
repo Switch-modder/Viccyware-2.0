@@ -33,6 +33,7 @@
 #include "coretech/common/engine/opencvThreading.h"
 #include "coretech/common/engine/utils/timer.h"
 #include "coretech/vision/shared/spriteCache/spriteCache.h"
+#include "coretech/common/engine/utils/data/dataPlatform.h"
 #include "audioEngine/multiplexer/audioMultiplexer.h"
 
 #include "webServerProcess/src/webService.h"
@@ -109,9 +110,9 @@ Result AnimEngine::Init()
 
   OSState::getInstance()->SetUpdatePeriod(1000);
 
-  RobotDataLoader * dataLoader = _context->GetDataLoader();
-  dataLoader->LoadConfigData();
-  dataLoader->LoadNonConfigData();
+//  RobotDataLoader * dataLoader = _context->GetDataLoader();
+//  dataLoader->LoadConfigData();
+//  dataLoader->LoadNonConfigData();
 
   _ttsComponent = std::make_unique<TextToSpeechComponent>(_context.get());
   _context->GetMicDataSystem()->Init(*dataLoader);
@@ -138,6 +139,8 @@ Result AnimEngine::Init()
 
   AnimProcessMessages::Init(this, _animationStreamer.get(), _streamingAnimationModifier.get(), audioInput, _context.get());
 
+  Json::Value jsonConfig;
+  jsonConfig["port"] = "8889";
   _context->GetWebService()->Start(_context->GetDataPlatform(),
                                    _context->GetDataLoader()->GetWebServerAnimConfig());
   FaceInfoScreenManager::getInstance()->Init(_context.get(), _animationStreamer.get());
@@ -163,6 +166,9 @@ Result AnimEngine::Init()
 
   LOG_INFO("AnimEngine.Init.Success","Success");
   _isInitialized = true;
+  
+  
+  
 
   return RESULT_OK;
 }
@@ -250,6 +256,18 @@ void AnimEngine::HandleMessage(const RobotInterface::TextToSpeechPrepare & msg)
 {
   DEV_ASSERT(_ttsComponent, "AnimEngine.TextToSpeechPrepare.InvalidTTSComponent");
   _ttsComponent->HandleMessage(msg);
+}
+  
+void AnimEngine::HandleMessage(const RobotInterface::StartDoom & msg)
+{
+  const auto* dp = _context->GetDataPlatform();
+  const auto& path = dp->pathToResource(Util::Data::Scope::Resources, "config/engine/doom");
+  _animationStreamer->StartGame(path, _context->GetAudioController() );
+}
+  
+void AnimEngine::HandleMessage(const Anki::Cozmo::RobotState& robotState)
+{
+  _animationStreamer->HandleMessage(robotState);
 }
 
 void AnimEngine::HandleMessage(const RobotInterface::TextToSpeechPlay & msg)

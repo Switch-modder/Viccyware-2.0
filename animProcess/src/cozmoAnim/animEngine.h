@@ -39,6 +39,7 @@ namespace Anki {
       struct TextToSpeechPrepare;
       struct TextToSpeechPlay;
       struct TextToSpeechCancel;
+      struct StartDoom;
     } // RobotInterface
   } // Vector
   namespace Util {
@@ -78,6 +79,7 @@ public:
   void HandleMessage(const RobotInterface::TextToSpeechPrepare& msg);
   void HandleMessage(const RobotInterface::TextToSpeechPlay& msg);
   void HandleMessage(const RobotInterface::TextToSpeechCancel& msg);
+  void HandleMessage(const RobotInterface::StartDoom& msg);
   
 protected:
 
