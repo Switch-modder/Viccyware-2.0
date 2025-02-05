@@ -110,7 +110,7 @@ message AccountSettingsConfig {
 }
 
 enum UserEntitlement {
-  KICKSTARTER_EYES = 4;
+  KICKSTARTER_EYES = 0;
 }
 
 message UserEntitlementsConfig {
