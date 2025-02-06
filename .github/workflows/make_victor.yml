@@ -1,10 +1,10 @@
 name: Build and Cache Workflow
 
-on:
-  push:
-    tags:
-      - '*'
-  workflow_dispatch:
+#on:
+#  push:
+#    tags:
+#      - '*'
+#  workflow_dispatch:
 
 jobs:
   make_victor:
