@@ -37,6 +37,10 @@
       "user_intent": "play_anygame"
     },
     {
+      "cloud_intent": "intent_play_keepaway",
+      "user_intent": "play_keepaway"
+    },
+    {
       "cloud_intent": "intent_play_blackjack",
       "user_intent": "play_blackjack"
     },
