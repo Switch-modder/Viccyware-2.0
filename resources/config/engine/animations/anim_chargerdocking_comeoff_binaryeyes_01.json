@@ -1,92 +1,92 @@
 {
   "anim_chargerdocking_comeoff_binaryeyes_01": [
     {
-      "durationTime_ms": 1804,
+      "durationTime_ms": 2706,
       "triggerTime_ms": 0,
       "Name": "LiftHeightKeyFrame",
       "heightVariability_mm": 0,
       "height_mm": 32
     },
     {
-      "durationTime_ms": 110,
-      "triggerTime_ms": 1804,
+      "durationTime_ms": 165,
+      "triggerTime_ms": 2706,
       "Name": "LiftHeightKeyFrame",
       "heightVariability_mm": 0,
       "height_mm": 42
     },
     {
-      "durationTime_ms": 154,
-      "triggerTime_ms": 2596,
-      "Name": "LiftHeightKeyFrame",
-      "heightVariability_mm": 0,
-      "height_mm": 32
-    },
-    {
-      "durationTime_ms": 44,
-      "triggerTime_ms": 6292,
-      "Name": "LiftHeightKeyFrame",
-      "heightVariability_mm": 0,
-      "height_mm": 39
-    },
-    {
-      "durationTime_ms": 44,
-      "triggerTime_ms": 6336,
-      "Name": "LiftHeightKeyFrame",
-      "heightVariability_mm": 0,
-      "height_mm": 32
-    },
-    {
-      "durationTime_ms": 44,
-      "triggerTime_ms": 7436,
-      "Name": "LiftHeightKeyFrame",
-      "heightVariability_mm": 0,
-      "height_mm": 39
-    },
-    {
-      "durationTime_ms": 44,
-      "triggerTime_ms": 7480,
-      "Name": "LiftHeightKeyFrame",
-      "heightVariability_mm": 0,
-      "height_mm": 32
-    },
-    {
-      "durationTime_ms": 44,
-      "triggerTime_ms": 8514,
-      "Name": "LiftHeightKeyFrame",
-      "heightVariability_mm": 0,
-      "height_mm": 41
-    },
-    {
-      "durationTime_ms": 44,
-      "triggerTime_ms": 8558,
-      "Name": "LiftHeightKeyFrame",
-      "heightVariability_mm": 0,
-      "height_mm": 32
-    },
-    {
-      "durationTime_ms": 44,
-      "triggerTime_ms": 8624,
-      "Name": "LiftHeightKeyFrame",
-      "heightVariability_mm": 0,
-      "height_mm": 42
-    },
-    {
-      "durationTime_ms": 44,
-      "triggerTime_ms": 8668,
+      "durationTime_ms": 231,
+      "triggerTime_ms": 3894,
       "Name": "LiftHeightKeyFrame",
       "heightVariability_mm": 0,
       "height_mm": 32
     },
     {
       "durationTime_ms": 66,
-      "triggerTime_ms": 12804,
+      "triggerTime_ms": 9438,
+      "Name": "LiftHeightKeyFrame",
+      "heightVariability_mm": 0,
+      "height_mm": 39
+    },
+    {
+      "durationTime_ms": 66,
+      "triggerTime_ms": 9504,
+      "Name": "LiftHeightKeyFrame",
+      "heightVariability_mm": 0,
+      "height_mm": 32
+    },
+    {
+      "durationTime_ms": 66,
+      "triggerTime_ms": 11154,
+      "Name": "LiftHeightKeyFrame",
+      "heightVariability_mm": 0,
+      "height_mm": 39
+    },
+    {
+      "durationTime_ms": 66,
+      "triggerTime_ms": 11220,
+      "Name": "LiftHeightKeyFrame",
+      "heightVariability_mm": 0,
+      "height_mm": 32
+    },
+    {
+      "durationTime_ms": 66,
+      "triggerTime_ms": 12771,
+      "Name": "LiftHeightKeyFrame",
+      "heightVariability_mm": 0,
+      "height_mm": 41
+    },
+    {
+      "durationTime_ms": 66,
+      "triggerTime_ms": 12837,
+      "Name": "LiftHeightKeyFrame",
+      "heightVariability_mm": 0,
+      "height_mm": 32
+    },
+    {
+      "durationTime_ms": 66,
+      "triggerTime_ms": 12936,
+      "Name": "LiftHeightKeyFrame",
+      "heightVariability_mm": 0,
+      "height_mm": 42
+    },
+    {
+      "durationTime_ms": 66,
+      "triggerTime_ms": 13002,
+      "Name": "LiftHeightKeyFrame",
+      "heightVariability_mm": 0,
+      "height_mm": 32
+    },
+    {
+      "durationTime_ms": 99,
+      "triggerTime_ms": 19206,
       "Name": "LiftHeightKeyFrame",
       "heightVariability_mm": 0,
       "height_mm": 47
     },
     {
-      "durationTime_ms": 44,
-      "triggerTime_ms": 12870,
+      "durationTime_ms": 66,
+      "triggerTime_ms": 19305,
       "Name": "LiftHeightKeyFrame",
       "heightVariability_mm": 0,
       "height_mm": 32
@@ -96,406 +96,406 @@
       "angle_deg": 0,
       "triggerTime_ms": 0,
       "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 44
+      "durationTime_ms": 66
     },
     {
       "angleVariability_deg": 0,
       "angle_deg": -11,
-      "triggerTime_ms": 44,
+      "triggerTime_ms": 66,
       "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 66
+      "durationTime_ms": 99
     },
     {
       "angleVariability_deg": 0,
       "angle_deg": -7,
-      "triggerTime_ms": 110,
+      "triggerTime_ms": 165,
       "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 88
+      "durationTime_ms": 132
     },
     {
       "angleVariability_deg": 0,
       "angle_deg": -6,
-      "triggerTime_ms": 198,
+      "triggerTime_ms": 297,
       "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 44
+      "durationTime_ms": 66
     },
     {
       "angleVariability_deg": 0,
       "angle_deg": -14,
-      "triggerTime_ms": 506,
+      "triggerTime_ms": 759,
       "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 66
+      "durationTime_ms": 99
     },
     {
       "angleVariability_deg": 0,
       "angle_deg": 3,
-      "triggerTime_ms": 572,
+      "triggerTime_ms": 858,
       "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 110
+      "durationTime_ms": 165
     },
     {
       "angleVariability_deg": 0,
       "angle_deg": 10,
-      "triggerTime_ms": 946,
+      "triggerTime_ms": 1419,
       "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 66
+      "durationTime_ms": 99
     },
     {
       "angleVariability_deg": 0,
       "angle_deg": 3,
-      "triggerTime_ms": 1386,
+      "triggerTime_ms": 2079,
       "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 44
+      "durationTime_ms": 66
     },
     {
       "angleVariability_deg": 0,
       "angle_deg": 11,
-      "triggerTime_ms": 1430,
+      "triggerTime_ms": 2145,
       "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 88
+      "durationTime_ms": 132
     },
     {
       "angleVariability_deg": 0,
       "angle_deg": 0,
-      "triggerTime_ms": 1716,
+      "triggerTime_ms": 2574,
       "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 44
+      "durationTime_ms": 66
     },
     {
       "angleVariability_deg": 0,
       "angle_deg": 17,
-      "triggerTime_ms": 1760,
+      "triggerTime_ms": 2640,
       "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 66
+      "durationTime_ms": 99
     },
     {
       "angleVariability_deg": 0,
       "angle_deg": 19,
-      "triggerTime_ms": 1826,
+      "triggerTime_ms": 2739,
       "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 44
+      "durationTime_ms": 66
     },
     {
       "angleVariability_deg": 0,
       "angle_deg": 15,
-      "triggerTime_ms": 2090,
+      "triggerTime_ms": 3135,
       "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 44
+      "durationTime_ms": 66
     },
     {
       "angleVariability_deg": 0,
       "angle_deg": 14,
-      "triggerTime_ms": 2134,
+      "triggerTime_ms": 3201,
       "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 44
+      "durationTime_ms": 66
     },
     {
       "angleVariability_deg": 0,
       "angle_deg": 11,
-      "triggerTime_ms": 2552,
-      "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 44
-    },
-    {
-      "angleVariability_deg": 0,
-      "angle_deg": 13,
-      "triggerTime_ms": 2596,
+      "triggerTime_ms": 3828,
       "Name": "HeadAngleKeyFrame",
       "durationTime_ms": 66
     },
     {
       "angleVariability_deg": 0,
       "angle_deg": 13,
-      "triggerTime_ms": 2662,
+      "triggerTime_ms": 3894,
       "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 44
+      "durationTime_ms": 99
+    },
+    {
+      "angleVariability_deg": 0,
+      "angle_deg": 13,
+      "triggerTime_ms": 3993,
+      "Name": "HeadAngleKeyFrame",
+      "durationTime_ms": 66
     },
     {
       "angleVariability_deg": 0,
       "angle_deg": -20,
-      "triggerTime_ms": 3102,
+      "triggerTime_ms": 4653,
       "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 88
+      "durationTime_ms": 132
     },
     {
       "angleVariability_deg": 0,
       "angle_deg": 17,
-      "triggerTime_ms": 3190,
+      "triggerTime_ms": 4785,
       "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 88
+      "durationTime_ms": 132
     },
     {
       "angleVariability_deg": 0,
       "angle_deg": 18,
-      "triggerTime_ms": 3278,
+      "triggerTime_ms": 4917,
       "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 66
+      "durationTime_ms": 99
     },
     {
       "angleVariability_deg": 0,
       "angle_deg": 33,
-      "triggerTime_ms": 5544,
+      "triggerTime_ms": 8316,
       "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 66
+      "durationTime_ms": 99
     },
     {
       "angleVariability_deg": 0,
       "angle_deg": 14,
-      "triggerTime_ms": 5610,
+      "triggerTime_ms": 8415,
+      "Name": "HeadAngleKeyFrame",
+      "durationTime_ms": 99
+    },
+    {
+      "angleVariability_deg": 0,
+      "angle_deg": 18,
+      "triggerTime_ms": 8514,
       "Name": "HeadAngleKeyFrame",
       "durationTime_ms": 66
-    },
-    {
-      "angleVariability_deg": 0,
-      "angle_deg": 18,
-      "triggerTime_ms": 5676,
-      "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 44
-    },
-    {
-      "angleVariability_deg": 0,
-      "angle_deg": 18,
-      "triggerTime_ms": 5720,
-      "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 550
-    },
-    {
-      "angleVariability_deg": 0,
-      "angle_deg": 22,
-      "triggerTime_ms": 6270,
-      "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 44
-    },
-    {
-      "angleVariability_deg": 0,
-      "angle_deg": 8,
-      "triggerTime_ms": 6314,
-      "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 44
-    },
-    {
-      "angleVariability_deg": 0,
-      "angle_deg": 18,
-      "triggerTime_ms": 6358,
-      "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 44
-    },
-    {
-      "angleVariability_deg": 0,
-      "angle_deg": 22,
-      "triggerTime_ms": 7414,
-      "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 44
-    },
-    {
-      "angleVariability_deg": 0,
-      "angle_deg": 9,
-      "triggerTime_ms": 7458,
-      "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 44
-    },
-    {
-      "angleVariability_deg": 0,
-      "angle_deg": 18,
-      "triggerTime_ms": 7502,
-      "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 44
-    },
-    {
-      "angleVariability_deg": 0,
-      "angle_deg": 34,
-      "triggerTime_ms": 7986,
-      "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 44
-    },
-    {
-      "angleVariability_deg": 0,
-      "angle_deg": 18,
-      "triggerTime_ms": 8030,
-      "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 44
-    },
-    {
-      "angleVariability_deg": 0,
-      "angle_deg": 18,
-      "triggerTime_ms": 8118,
-      "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 374
-    },
-    {
-      "angleVariability_deg": 0,
-      "angle_deg": 22,
-      "triggerTime_ms": 8492,
-      "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 44
-    },
-    {
-      "angleVariability_deg": 0,
-      "angle_deg": 9,
-      "triggerTime_ms": 8536,
-      "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 44
     },
     {
       "angleVariability_deg": 0,
       "angle_deg": 18,
       "triggerTime_ms": 8580,
       "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 44
+      "durationTime_ms": 825
     },
     {
       "angleVariability_deg": 0,
-      "angle_deg": -5,
-      "triggerTime_ms": 9658,
-      "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 88
-    },
-    {
-      "angleVariability_deg": 0,
-      "angle_deg": 23,
-      "triggerTime_ms": 9746,
-      "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 110
-    },
-    {
-      "angleVariability_deg": 0,
-      "angle_deg": 15,
-      "triggerTime_ms": 9856,
+      "angle_deg": 22,
+      "triggerTime_ms": 9405,
       "Name": "HeadAngleKeyFrame",
       "durationTime_ms": 66
-    },
-    {
-      "angleVariability_deg": 0,
-      "angle_deg": 12,
-      "triggerTime_ms": 10142,
-      "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 22
-    },
-    {
-      "angleVariability_deg": 0,
-      "angle_deg": 15,
-      "triggerTime_ms": 10164,
-      "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 44
-    },
-    {
-      "angleVariability_deg": 0,
-      "angle_deg": 11,
-      "triggerTime_ms": 10472,
-      "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 22
-    },
-    {
-      "angleVariability_deg": 0,
-      "angle_deg": 15,
-      "triggerTime_ms": 10494,
-      "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 66
-    },
-    {
-      "angleVariability_deg": 0,
-      "angle_deg": 12,
-      "triggerTime_ms": 10802,
-      "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 44
-    },
-    {
-      "angleVariability_deg": 0,
-      "angle_deg": 15,
-      "triggerTime_ms": 10912,
-      "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 66
-    },
-    {
-      "angleVariability_deg": 0,
-      "angle_deg": 19,
-      "triggerTime_ms": 11242,
-      "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 66
-    },
-    {
-      "angleVariability_deg": 0,
-      "angle_deg": 21,
-      "triggerTime_ms": 11550,
-      "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 44
-    },
-    {
-      "angleVariability_deg": 0,
-      "angle_deg": 19,
-      "triggerTime_ms": 11726,
-      "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 66
-    },
-    {
-      "angleVariability_deg": 0,
-      "angle_deg": 17,
-      "triggerTime_ms": 12100,
-      "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 44
-    },
-    {
-      "angleVariability_deg": 0,
-      "angle_deg": 20,
-      "triggerTime_ms": 12144,
-      "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 66
-    },
-    {
-      "angleVariability_deg": 0,
-      "angle_deg": 3,
-      "triggerTime_ms": 12210,
-      "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 44
     },
     {
       "angleVariability_deg": 0,
       "angle_deg": 8,
-      "triggerTime_ms": 12254,
+      "triggerTime_ms": 9471,
       "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 88
+      "durationTime_ms": 66
     },
     {
       "angleVariability_deg": 0,
-      "angle_deg": 13,
-      "triggerTime_ms": 12760,
+      "angle_deg": 18,
+      "triggerTime_ms": 9537,
       "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 88
+      "durationTime_ms": 66
     },
     {
       "angleVariability_deg": 0,
-      "angle_deg": -2,
-      "triggerTime_ms": 12848,
+      "angle_deg": 22,
+      "triggerTime_ms": 11121,
       "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 44
+      "durationTime_ms": 66
+    },
+    {
+      "angleVariability_deg": 0,
+      "angle_deg": 9,
+      "triggerTime_ms": 11187,
+      "Name": "HeadAngleKeyFrame",
+      "durationTime_ms": 66
+    },
+    {
+      "angleVariability_deg": 0,
+      "angle_deg": 18,
+      "triggerTime_ms": 11253,
+      "Name": "HeadAngleKeyFrame",
+      "durationTime_ms": 66
+    },
+    {
+      "angleVariability_deg": 0,
+      "angle_deg": 34,
+      "triggerTime_ms": 11979,
+      "Name": "HeadAngleKeyFrame",
+      "durationTime_ms": 66
+    },
+    {
+      "angleVariability_deg": 0,
+      "angle_deg": 18,
+      "triggerTime_ms": 12045,
+      "Name": "HeadAngleKeyFrame",
+      "durationTime_ms": 66
+    },
+    {
+      "angleVariability_deg": 0,
+      "angle_deg": 18,
+      "triggerTime_ms": 12177,
+      "Name": "HeadAngleKeyFrame",
+      "durationTime_ms": 561
+    },
+    {
+      "angleVariability_deg": 0,
+      "angle_deg": 22,
+      "triggerTime_ms": 12738,
+      "Name": "HeadAngleKeyFrame",
+      "durationTime_ms": 66
+    },
+    {
+      "angleVariability_deg": 0,
+      "angle_deg": 9,
+      "triggerTime_ms": 12804,
+      "Name": "HeadAngleKeyFrame",
+      "durationTime_ms": 66
+    },
+    {
+      "angleVariability_deg": 0,
+      "angle_deg": 18,
+      "triggerTime_ms": 12870,
+      "Name": "HeadAngleKeyFrame",
+      "durationTime_ms": 66
+    },
+    {
+      "angleVariability_deg": 0,
+      "angle_deg": -5,
+      "triggerTime_ms": 14487,
+      "Name": "HeadAngleKeyFrame",
+      "durationTime_ms": 132
+    },
+    {
+      "angleVariability_deg": 0,
+      "angle_deg": 23,
+      "triggerTime_ms": 14619,
+      "Name": "HeadAngleKeyFrame",
+      "durationTime_ms": 165
+    },
+    {
+      "angleVariability_deg": 0,
+      "angle_deg": 15,
+      "triggerTime_ms": 14784,
+      "Name": "HeadAngleKeyFrame",
+      "durationTime_ms": 99
     },
     {
       "angleVariability_deg": 0,
       "angle_deg": 12,
-      "triggerTime_ms": 12892,
+      "triggerTime_ms": 15213,
+      "Name": "HeadAngleKeyFrame",
+      "durationTime_ms": 33
+    },
+    {
+      "angleVariability_deg": 0,
+      "angle_deg": 15,
+      "triggerTime_ms": 15246,
       "Name": "HeadAngleKeyFrame",
       "durationTime_ms": 66
+    },
+    {
+      "angleVariability_deg": 0,
+      "angle_deg": 11,
+      "triggerTime_ms": 15708,
+      "Name": "HeadAngleKeyFrame",
+      "durationTime_ms": 33
+    },
+    {
+      "angleVariability_deg": 0,
+      "angle_deg": 15,
+      "triggerTime_ms": 15741,
+      "Name": "HeadAngleKeyFrame",
+      "durationTime_ms": 99
+    },
+    {
+      "angleVariability_deg": 0,
+      "angle_deg": 12,
+      "triggerTime_ms": 16203,
+      "Name": "HeadAngleKeyFrame",
+      "durationTime_ms": 66
+    },
+    {
+      "angleVariability_deg": 0,
+      "angle_deg": 15,
+      "triggerTime_ms": 16368,
+      "Name": "HeadAngleKeyFrame",
+      "durationTime_ms": 99
+    },
+    {
+      "angleVariability_deg": 0,
+      "angle_deg": 19,
+      "triggerTime_ms": 16863,
+      "Name": "HeadAngleKeyFrame",
+      "durationTime_ms": 99
+    },
+    {
+      "angleVariability_deg": 0,
+      "angle_deg": 21,
+      "triggerTime_ms": 17325,
+      "Name": "HeadAngleKeyFrame",
+      "durationTime_ms": 66
+    },
+    {
+      "angleVariability_deg": 0,
+      "angle_deg": 19,
+      "triggerTime_ms": 17589,
+      "Name": "HeadAngleKeyFrame",
+      "durationTime_ms": 99
+    },
+    {
+      "angleVariability_deg": 0,
+      "angle_deg": 17,
+      "triggerTime_ms": 18150,
+      "Name": "HeadAngleKeyFrame",
+      "durationTime_ms": 66
+    },
+    {
+      "angleVariability_deg": 0,
+      "angle_deg": 20,
+      "triggerTime_ms": 18216,
+      "Name": "HeadAngleKeyFrame",
+      "durationTime_ms": 99
+    },
+    {
+      "angleVariability_deg": 0,
+      "angle_deg": 3,
+      "triggerTime_ms": 18315,
+      "Name": "HeadAngleKeyFrame",
+      "durationTime_ms": 66
+    },
+    {
+      "angleVariability_deg": 0,
+      "angle_deg": 8,
+      "triggerTime_ms": 18381,
+      "Name": "HeadAngleKeyFrame",
+      "durationTime_ms": 132
+    },
+    {
+      "angleVariability_deg": 0,
+      "angle_deg": 13,
+      "triggerTime_ms": 19140,
+      "Name": "HeadAngleKeyFrame",
+      "durationTime_ms": 132
+    },
+    {
+      "angleVariability_deg": 0,
+      "angle_deg": -2,
+      "triggerTime_ms": 19272,
+      "Name": "HeadAngleKeyFrame",
+      "durationTime_ms": 66
+    },
+    {
+      "angleVariability_deg": 0,
+      "angle_deg": 12,
+      "triggerTime_ms": 19338,
+      "Name": "HeadAngleKeyFrame",
+      "durationTime_ms": 99
     },
     {
       "angleVariability_deg": 0,
       "angle_deg": 10,
-      "triggerTime_ms": 12958,
+      "triggerTime_ms": 19437,
       "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 66
+      "durationTime_ms": 99
     },
     {
       "angleVariability_deg": 0,
       "angle_deg": -8,
-      "triggerTime_ms": 13156,
+      "triggerTime_ms": 19734,
       "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 66
+      "durationTime_ms": 99
     },
     {
       "angleVariability_deg": 0,
       "angle_deg": 0,
-      "triggerTime_ms": 13222,
+      "triggerTime_ms": 19833,
       "Name": "HeadAngleKeyFrame",
-      "durationTime_ms": 66
+      "durationTime_ms": 99
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -625,7 +625,7 @@
         0.033673240017845774,
         0
       ],
-      "triggerTime_ms": 22
+      "triggerTime_ms": 33
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -690,7 +690,7 @@
         0.14470029441560772,
         0
       ],
-      "triggerTime_ms": 44
+      "triggerTime_ms": 66
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -755,7 +755,7 @@
         0.2273211268714317,
         0
       ],
-      "triggerTime_ms": 66
+      "triggerTime_ms": 99
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -820,7 +820,7 @@
         0.2419371020320753,
         0
       ],
-      "triggerTime_ms": 88
+      "triggerTime_ms": 132
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -885,7 +885,7 @@
         0.24944260279024388,
         0
       ],
-      "triggerTime_ms": 110
+      "triggerTime_ms": 165
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -950,7 +950,7 @@
         0.2522077872800953,
         0
       ],
-      "triggerTime_ms": 132
+      "triggerTime_ms": 198
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -1015,7 +1015,7 @@
         0.2526028136357884,
         0
       ],
-      "triggerTime_ms": 154
+      "triggerTime_ms": 231
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -1080,7 +1080,7 @@
         0.2526028136357884,
         0
       ],
-      "triggerTime_ms": 176
+      "triggerTime_ms": 264
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -1145,7 +1145,7 @@
         0.2526028136357884,
         0
       ],
-      "triggerTime_ms": 198
+      "triggerTime_ms": 297
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -1210,7 +1210,7 @@
         0.2526028136357884,
         0
       ],
-      "triggerTime_ms": 220
+      "triggerTime_ms": 330
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -1275,7 +1275,7 @@
         0.2526028136357884,
         0
       ],
-      "triggerTime_ms": 242
+      "triggerTime_ms": 363
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -1340,7 +1340,7 @@
         0.2526028136357884,
         0
       ],
-      "triggerTime_ms": 264
+      "triggerTime_ms": 396
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -1405,7 +1405,7 @@
         0.2526028136357884,
         0
       ],
-      "triggerTime_ms": 286
+      "triggerTime_ms": 429
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -1470,7 +1470,7 @@
         0.2526028136357884,
         0
       ],
-      "triggerTime_ms": 308
+      "triggerTime_ms": 462
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -1535,7 +1535,7 @@
         0.2526028136357884,
         0
       ],
-      "triggerTime_ms": 330
+      "triggerTime_ms": 495
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -1600,7 +1600,7 @@
         0.2526028136357884,
         0
       ],
-      "triggerTime_ms": 374
+      "triggerTime_ms": 561
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -1665,7 +1665,7 @@
         0.2526028136357884,
         0
       ],
-      "triggerTime_ms": 396
+      "triggerTime_ms": 594
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -1730,7 +1730,7 @@
         0.2526028136357884,
         0
       ],
-      "triggerTime_ms": 418
+      "triggerTime_ms": 627
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -1795,7 +1795,7 @@
         0.2526028136357884,
         0
       ],
-      "triggerTime_ms": 440
+      "triggerTime_ms": 660
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -1860,7 +1860,7 @@
         0.2526028136357884,
         0
       ],
-      "triggerTime_ms": 462
+      "triggerTime_ms": 693
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -1925,7 +1925,7 @@
         0.2526028136357884,
         0
       ],
-      "triggerTime_ms": 484
+      "triggerTime_ms": 726
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -1990,7 +1990,7 @@
         0.2526028136357884,
         0
       ],
-      "triggerTime_ms": 506
+      "triggerTime_ms": 759
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -2055,7 +2055,7 @@
         0.2526028136357884,
         0
       ],
-      "triggerTime_ms": 528
+      "triggerTime_ms": 792
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -2120,7 +2120,7 @@
         -0.011088352639149202,
         0
       ],
-      "triggerTime_ms": 550
+      "triggerTime_ms": 825
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -2185,7 +2185,7 @@
         -0.05647193827693067,
         0
       ],
-      "triggerTime_ms": 572
+      "triggerTime_ms": 858
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -2250,7 +2250,7 @@
         -0.05647193827693067,
         0
       ],
-      "triggerTime_ms": 594
+      "triggerTime_ms": 891
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -2315,7 +2315,7 @@
         -0.05647193827693067,
         0
       ],
-      "triggerTime_ms": 616
+      "triggerTime_ms": 924
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -2380,7 +2380,7 @@
         -0.05647193827693067,
         0
       ],
-      "triggerTime_ms": 638
+      "triggerTime_ms": 957
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -2445,7 +2445,7 @@
         -0.05647193827693067,
         0
       ],
-      "triggerTime_ms": 660
+      "triggerTime_ms": 990
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -2510,7 +2510,7 @@
         -0.05647193827693067,
         0
       ],
-      "triggerTime_ms": 682
+      "triggerTime_ms": 1023
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -2575,7 +2575,7 @@
         -0.05647193827693067,
         0
       ],
-      "triggerTime_ms": 704
+      "triggerTime_ms": 1056
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -2640,7 +2640,7 @@
         -0.05647193827693067,
         0
       ],
-      "triggerTime_ms": 748
+      "triggerTime_ms": 1122
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -2705,7 +2705,7 @@
         -0.05647193827693067,
         0
       ],
-      "triggerTime_ms": 770
+      "triggerTime_ms": 1155
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -2770,7 +2770,7 @@
         -0.05647193827693067,
         0
       ],
-      "triggerTime_ms": 792
+      "triggerTime_ms": 1188
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -2835,7 +2835,7 @@
         -0.05647193827693067,
         0
       ],
-      "triggerTime_ms": 814
+      "triggerTime_ms": 1221
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -2900,7 +2900,7 @@
         -0.05647193827693067,
         0
       ],
-      "triggerTime_ms": 836
+      "triggerTime_ms": 1254
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -2965,7 +2965,7 @@
         -0.05647193827693067,
         0
       ],
-      "triggerTime_ms": 858
+      "triggerTime_ms": 1287
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -3030,7 +3030,7 @@
         -0.05647193827693067,
         0
       ],
-      "triggerTime_ms": 880
+      "triggerTime_ms": 1320
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -3095,7 +3095,7 @@
         -0.05925254158133572,
         0
       ],
-      "triggerTime_ms": 902
+      "triggerTime_ms": 1353
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -3160,7 +3160,7 @@
         -0.12227546409527291,
         0
       ],
-      "triggerTime_ms": 924
+      "triggerTime_ms": 1386
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -3225,7 +3225,7 @@
         -0.1655206759933107,
         0
       ],
-      "triggerTime_ms": 946
+      "triggerTime_ms": 1419
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -3290,7 +3290,7 @@
         -0.1785268705761781,
         0
       ],
-      "triggerTime_ms": 968
+      "triggerTime_ms": 1452
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -3355,7 +3355,7 @@
         -0.1785268705761781,
         0
       ],
-      "triggerTime_ms": 990
+      "triggerTime_ms": 1485
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -3420,7 +3420,7 @@
         -0.1785268705761781,
         0
       ],
-      "triggerTime_ms": 1012
+      "triggerTime_ms": 1518
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -3485,7 +3485,7 @@
         -0.1785268705761781,
         0
       ],
-      "triggerTime_ms": 1034
+      "triggerTime_ms": 1551
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -3550,7 +3550,7 @@
         -0.1785268705761781,
         0
       ],
-      "triggerTime_ms": 1056
+      "triggerTime_ms": 1584
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -3615,7 +3615,7 @@
         -0.1785268705761781,
         0
       ],
-      "triggerTime_ms": 1078
+      "triggerTime_ms": 1617
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -3680,7 +3680,7 @@
         -0.1785268705761781,
         0
       ],
-      "triggerTime_ms": 1100
+      "triggerTime_ms": 1650
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -3745,7 +3745,7 @@
         -0.1785268705761781,
         0
       ],
-      "triggerTime_ms": 1122
+      "triggerTime_ms": 1683
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -3810,7 +3810,7 @@
         -0.1785268705761781,
         0
       ],
-      "triggerTime_ms": 1144
+      "triggerTime_ms": 1716
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -3875,7 +3875,7 @@
         -0.1785268705761781,
         0
       ],
-      "triggerTime_ms": 1166
+      "triggerTime_ms": 1749
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -3940,7 +3940,7 @@
         -0.1785268705761781,
         0
       ],
-      "triggerTime_ms": 1188
+      "triggerTime_ms": 1782
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -4005,7 +4005,7 @@
         -0.1785268705761781,
         0
       ],
-      "triggerTime_ms": 1210
+      "triggerTime_ms": 1815
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -4070,7 +4070,7 @@
         -0.1785268705761781,
         0
       ],
-      "triggerTime_ms": 1232
+      "triggerTime_ms": 1848
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -4135,7 +4135,7 @@
         -0.1785268705761781,
         0
       ],
-      "triggerTime_ms": 1254
+      "triggerTime_ms": 1881
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -4200,7 +4200,7 @@
         -0.1785268705761781,
         0
       ],
-      "triggerTime_ms": 1276
+      "triggerTime_ms": 1914
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -4265,7 +4265,7 @@
         -0.1785268705761781,
         0
       ],
-      "triggerTime_ms": 1320
+      "triggerTime_ms": 1980
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -4330,7 +4330,7 @@
         -0.1785268705761781,
         0
       ],
-      "triggerTime_ms": 1342
+      "triggerTime_ms": 2013
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -4395,7 +4395,7 @@
         -0.1785268705761781,
         0
       ],
-      "triggerTime_ms": 1364
+      "triggerTime_ms": 2046
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -4460,7 +4460,7 @@
         -0.1785268705761781,
         0
       ],
-      "triggerTime_ms": 1386
+      "triggerTime_ms": 2079
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -4525,7 +4525,7 @@
         -0.1785268705761781,
         0
       ],
-      "triggerTime_ms": 1408
+      "triggerTime_ms": 2112
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -4590,7 +4590,7 @@
         -0.03999109117901808,
         0
       ],
-      "triggerTime_ms": 1430
+      "triggerTime_ms": 2145
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -4655,7 +4655,7 @@
         0.016386900329960152,
         0
       ],
-      "triggerTime_ms": 1452
+      "triggerTime_ms": 2178
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -4720,7 +4720,7 @@
         0.028396681645584065,
         0
       ],
-      "triggerTime_ms": 1474
+      "triggerTime_ms": 2211
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -4785,7 +4785,7 @@
         0.028396681645584065,
         0
       ],
-      "triggerTime_ms": 1496
+      "triggerTime_ms": 2244
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -4850,7 +4850,7 @@
         0.028396681645584065,
         0
       ],
-      "triggerTime_ms": 1518
+      "triggerTime_ms": 2277
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -4915,7 +4915,7 @@
         0.028396681645584065,
         0
       ],
-      "triggerTime_ms": 1540
+      "triggerTime_ms": 2310
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -4980,7 +4980,7 @@
         0.028396681645584065,
         0
       ],
-      "triggerTime_ms": 1562
+      "triggerTime_ms": 2343
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -5045,7 +5045,7 @@
         0.028396681645584065,
         0
       ],
-      "triggerTime_ms": 1584
+      "triggerTime_ms": 2376
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -5110,7 +5110,7 @@
         0.028396681645584065,
         0
       ],
-      "triggerTime_ms": 1606
+      "triggerTime_ms": 2409
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -5175,7 +5175,7 @@
         0.028396681645584065,
         0
       ],
-      "triggerTime_ms": 1628
+      "triggerTime_ms": 2442
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -5240,7 +5240,7 @@
         0.028396681645584065,
         0
       ],
-      "triggerTime_ms": 1694
+      "triggerTime_ms": 2541
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -5305,7 +5305,7 @@
         0.028396681645584065,
         0
       ],
-      "triggerTime_ms": 1716
+      "triggerTime_ms": 2574
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -5370,7 +5370,7 @@
         0.028396681645584065,
         0
       ],
-      "triggerTime_ms": 1738
+      "triggerTime_ms": 2607
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -5435,7 +5435,7 @@
         -0.017570131681157092,
         0
       ],
-      "triggerTime_ms": 1760
+      "triggerTime_ms": 2640
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -5500,7 +5500,7 @@
         -0.03002358032948325,
         0
       ],
-      "triggerTime_ms": 1782
+      "triggerTime_ms": 2673
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -5565,7 +5565,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 1804
+      "triggerTime_ms": 2706
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -5630,7 +5630,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 1826
+      "triggerTime_ms": 2739
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -5695,7 +5695,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 1848
+      "triggerTime_ms": 2772
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -5760,7 +5760,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 1870
+      "triggerTime_ms": 2805
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -5825,7 +5825,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 1892
+      "triggerTime_ms": 2838
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -5890,7 +5890,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 1914
+      "triggerTime_ms": 2871
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -5955,7 +5955,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 1936
+      "triggerTime_ms": 2904
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -6020,7 +6020,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 1958
+      "triggerTime_ms": 2937
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -6085,7 +6085,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 1980
+      "triggerTime_ms": 2970
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -6150,7 +6150,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2002
+      "triggerTime_ms": 3003
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -6215,7 +6215,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2024
+      "triggerTime_ms": 3036
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -6280,7 +6280,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2046
+      "triggerTime_ms": 3069
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -6345,7 +6345,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2068
+      "triggerTime_ms": 3102
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -6410,7 +6410,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2090
+      "triggerTime_ms": 3135
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -6475,7 +6475,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2112
+      "triggerTime_ms": 3168
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -6540,7 +6540,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2134
+      "triggerTime_ms": 3201
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -6605,7 +6605,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2156
+      "triggerTime_ms": 3234
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -6670,7 +6670,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2178
+      "triggerTime_ms": 3267
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -6735,7 +6735,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2200
+      "triggerTime_ms": 3300
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -6800,7 +6800,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2222
+      "triggerTime_ms": 3333
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -6865,7 +6865,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2244
+      "triggerTime_ms": 3366
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -6930,7 +6930,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2266
+      "triggerTime_ms": 3399
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -6995,7 +6995,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2288
+      "triggerTime_ms": 3432
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -7060,7 +7060,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2310
+      "triggerTime_ms": 3465
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -7125,7 +7125,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2332
+      "triggerTime_ms": 3498
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -7190,7 +7190,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2354
+      "triggerTime_ms": 3531
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -7255,7 +7255,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2376
+      "triggerTime_ms": 3564
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -7320,7 +7320,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2398
+      "triggerTime_ms": 3597
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -7385,7 +7385,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2442
+      "triggerTime_ms": 3663
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -7450,7 +7450,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2464
+      "triggerTime_ms": 3696
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -7515,7 +7515,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2486
+      "triggerTime_ms": 3729
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -7580,7 +7580,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2530
+      "triggerTime_ms": 3795
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -7645,7 +7645,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2552
+      "triggerTime_ms": 3828
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -7710,7 +7710,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2574
+      "triggerTime_ms": 3861
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -7775,7 +7775,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2596
+      "triggerTime_ms": 3894
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -7840,7 +7840,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2618
+      "triggerTime_ms": 3927
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -7905,7 +7905,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2640
+      "triggerTime_ms": 3960
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -7970,7 +7970,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2662
+      "triggerTime_ms": 3993
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -8035,7 +8035,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2684
+      "triggerTime_ms": 4026
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -8100,7 +8100,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2706
+      "triggerTime_ms": 4059
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -8165,7 +8165,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2728
+      "triggerTime_ms": 4092
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -8230,7 +8230,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2750
+      "triggerTime_ms": 4125
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -8295,7 +8295,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2772
+      "triggerTime_ms": 4158
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -8360,7 +8360,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2816
+      "triggerTime_ms": 4224
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -8425,7 +8425,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2838
+      "triggerTime_ms": 4257
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -8490,7 +8490,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2860
+      "triggerTime_ms": 4290
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -8555,7 +8555,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2882
+      "triggerTime_ms": 4323
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -8620,7 +8620,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2904
+      "triggerTime_ms": 4356
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -8685,7 +8685,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 2926
+      "triggerTime_ms": 4389
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -8750,7 +8750,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 3058
+      "triggerTime_ms": 4587
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -8815,7 +8815,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 3080
+      "triggerTime_ms": 4620
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -8880,7 +8880,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 3102
+      "triggerTime_ms": 4653
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -8945,7 +8945,7 @@
         -0.03235221317446754,
         0
       ],
-      "triggerTime_ms": 3124
+      "triggerTime_ms": 4686
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -9010,7 +9010,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 3146
+      "triggerTime_ms": 4719
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -9075,7 +9075,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 3168
+      "triggerTime_ms": 4752
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -9140,13 +9140,13 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 3189
+      "triggerTime_ms": 4784
     },
     {
       "Name": "ProceduralFaceKeyFrame",
-      "faceScaleY": 0.1388731409092703,
+      "faceScaleY": 0.13887314090927014,
       "scanlineOpacity": 1.0,
-      "faceScaleX": 1.3111828142193191,
+      "faceScaleX": 1.31118281421932,
       "leftEye": [
         12.57047705018654,
         0.0,
@@ -9176,7 +9176,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 27.452195545092533,
+      "faceCenterY": 27.452195545092554,
       "faceCenterX": 0.0,
       "rightEye": [
         -12.037264014150928,
@@ -9205,7 +9205,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 3190
+      "triggerTime_ms": 4785
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -9241,7 +9241,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 387.446895071999,
+      "faceCenterY": 387.4468950719916,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.239188998853741,
@@ -9270,7 +9270,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 3212
+      "triggerTime_ms": 4818
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -9335,7 +9335,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 3234
+      "triggerTime_ms": 4851
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -9400,7 +9400,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 3278
+      "triggerTime_ms": 4917
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -9465,7 +9465,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 3300
+      "triggerTime_ms": 4950
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -9530,7 +9530,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 3322
+      "triggerTime_ms": 4983
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -9595,7 +9595,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 3344
+      "triggerTime_ms": 5016
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -9631,7 +9631,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 707.5423862187854,
+      "faceCenterY": 707.5423862187853,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.733797631048283,
@@ -9660,7 +9660,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 3366
+      "triggerTime_ms": 5049
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -9725,7 +9725,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 3388
+      "triggerTime_ms": 5082
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -9761,7 +9761,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 720.2961458569146,
+      "faceCenterY": 720.2961458569144,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.770804577403787,
@@ -9790,7 +9790,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 3410
+      "triggerTime_ms": 5115
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -9826,7 +9826,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 758.5574247713023,
+      "faceCenterY": 758.5574247713022,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.797809646365913,
@@ -9855,7 +9855,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 3542
+      "triggerTime_ms": 5313
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -9891,7 +9891,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 777.6880642284962,
+      "faceCenterY": 777.688064228496,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.797809646365913,
@@ -9920,7 +9920,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 3608
+      "triggerTime_ms": 5412
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -9956,7 +9956,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 1147.5470937342448,
+      "faceCenterY": 1147.5470937342445,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.797809646365913,
@@ -9985,7 +9985,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 4884
+      "triggerTime_ms": 7326
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -10021,7 +10021,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 1153.923973553309,
+      "faceCenterY": 1153.9239735533092,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.797809646365913,
@@ -10050,7 +10050,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 4906
+      "triggerTime_ms": 7359
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -10115,7 +10115,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 4928
+      "triggerTime_ms": 7392
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -10180,7 +10180,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 5236
+      "triggerTime_ms": 7854
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -10216,7 +10216,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 1255.9540506583432,
+      "faceCenterY": 1255.954050658343,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.797809646365913,
@@ -10245,7 +10245,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 5258
+      "triggerTime_ms": 7887
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -10310,7 +10310,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 5280
+      "triggerTime_ms": 7920
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -10375,7 +10375,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 5544
+      "triggerTime_ms": 8316
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -10440,11 +10440,11 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 5588
+      "triggerTime_ms": 8382
     },
     {
       "Name": "ProceduralFaceKeyFrame",
-      "faceScaleY": 0.1491955321081581,
+      "faceScaleY": 0.14919553210815809,
       "scanlineOpacity": 1.0,
       "faceScaleX": 1.3659487450118146,
       "leftEye": [
@@ -10476,7 +10476,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 1357.9691460805952,
+      "faceCenterY": 1357.969146080595,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.797809646365913,
@@ -10505,11 +10505,11 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 5610
+      "triggerTime_ms": 8415
     },
     {
       "Name": "ProceduralFaceKeyFrame",
-      "faceScaleY": 0.14984508813096428,
+      "faceScaleY": 0.1498450881309643,
       "scanlineOpacity": 1.0,
       "faceScaleX": 1.3647912854784319,
       "leftEye": [
@@ -10541,7 +10541,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 1364.3130661975388,
+      "faceCenterY": 1364.313066197539,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.797809646365913,
@@ -10570,7 +10570,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 5632
+      "triggerTime_ms": 8448
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -10606,7 +10606,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 1453.1279478347537,
+      "faceCenterY": 1453.127947834754,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.797809646365913,
@@ -10635,11 +10635,11 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 5940
+      "triggerTime_ms": 8910
     },
     {
       "Name": "ProceduralFaceKeyFrame",
-      "faceScaleY": 0.15958842847305738,
+      "faceScaleY": 0.1595884284730574,
       "scanlineOpacity": 1.0,
       "faceScaleX": 1.3474293924776908,
       "leftEye": [
@@ -10671,7 +10671,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 1459.4718679516977,
+      "faceCenterY": 1459.471867951698,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.797809646365913,
@@ -10700,11 +10700,11 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 5962
+      "triggerTime_ms": 8943
     },
     {
       "Name": "ProceduralFaceKeyFrame",
-      "faceScaleY": 0.1602379844958636,
+      "faceScaleY": 0.16023798449586357,
       "scanlineOpacity": 1.0,
       "faceScaleX": 1.346271932944308,
       "leftEye": [
@@ -10736,7 +10736,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 1465.815788068642,
+      "faceCenterY": 1465.8157880686415,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.797809646365913,
@@ -10765,7 +10765,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 5984
+      "triggerTime_ms": 8976
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -10801,7 +10801,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 1548.2867495889127,
+      "faceCenterY": 1548.2867495889125,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.797809646365913,
@@ -10830,7 +10830,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 6270
+      "triggerTime_ms": 9405
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -10895,13 +10895,13 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 6380
+      "triggerTime_ms": 9570
     },
     {
       "Name": "ProceduralFaceKeyFrame",
       "faceScaleY": 0.17257954892918148,
       "scanlineOpacity": 1.0,
-      "faceScaleX": 1.324280201810036,
+      "faceScaleX": 1.3242802018100361,
       "leftEye": [
         13.47383574389844,
         0.0,
@@ -10931,7 +10931,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 1586.3502702905762,
+      "faceCenterY": 1586.350270290576,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.797809646365913,
@@ -10960,7 +10960,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 6402
+      "triggerTime_ms": 9603
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -10996,7 +10996,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 1592.6941904075202,
+      "faceCenterY": 1592.69419040752,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.797809646365913,
@@ -11025,11 +11025,11 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 6424
+      "triggerTime_ms": 9636
     },
     {
       "Name": "ProceduralFaceKeyFrame",
-      "faceScaleY": 0.18686978143091798,
+      "faceScaleY": 0.186869781430918,
       "scanlineOpacity": 1.0,
       "faceScaleX": 1.2988160920756158,
       "leftEye": [
@@ -11061,7 +11061,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 1725.9165128633422,
+      "faceCenterY": 1725.9165128633424,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.797809646365913,
@@ -11090,7 +11090,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 6886
+      "triggerTime_ms": 10329
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -11155,7 +11155,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 6908
+      "triggerTime_ms": 10362
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -11220,7 +11220,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 6930
+      "triggerTime_ms": 10395
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -11285,11 +11285,11 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 7084
+      "triggerTime_ms": 10626
     },
     {
       "Name": "ProceduralFaceKeyFrame",
-      "faceScaleY": 0.19336534165898006,
+      "faceScaleY": 0.19336534165898003,
       "scanlineOpacity": 1.0,
       "faceScaleX": 1.2872414967417884,
       "leftEye": [
@@ -11321,7 +11321,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 1789.3557140327816,
+      "faceCenterY": 1789.3557140327814,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.797809646365913,
@@ -11350,7 +11350,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 7106
+      "triggerTime_ms": 10659
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -11386,7 +11386,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 1795.6996341497256,
+      "faceCenterY": 1795.6996341497254,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.797809646365913,
@@ -11415,7 +11415,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 7128
+      "triggerTime_ms": 10692
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -11480,7 +11480,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 7194
+      "triggerTime_ms": 10791
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -11545,11 +11545,11 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 7414
+      "triggerTime_ms": 11121
     },
     {
       "Name": "ProceduralFaceKeyFrame",
-      "faceScaleY": 0.21332794755897735,
+      "faceScaleY": 0.21332794755897733,
       "scanlineOpacity": 1.0,
       "faceScaleX": 1.26055889401208,
       "leftEye": [
@@ -11610,7 +11610,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 7524
+      "triggerTime_ms": 11286
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -11675,11 +11675,11 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 7546
+      "triggerTime_ms": 11319
     },
     {
       "Name": "ProceduralFaceKeyFrame",
-      "faceScaleY": 0.21593013923360754,
+      "faceScaleY": 0.2159301392336075,
       "scanlineOpacity": 1.0,
       "faceScaleX": 1.2574419088175974,
       "leftEye": [
@@ -11740,7 +11740,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 7568
+      "triggerTime_ms": 11352
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -11805,11 +11805,11 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 8030
+      "triggerTime_ms": 12045
     },
     {
       "Name": "ProceduralFaceKeyFrame",
-      "faceScaleY": 0.24455424765453898,
+      "faceScaleY": 0.24455424765453893,
       "scanlineOpacity": 1.0,
       "faceScaleX": 1.2231550716782889,
       "leftEye": [
@@ -11841,7 +11841,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 1626.516578642717,
+      "faceCenterY": 1626.5165786427171,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.797809646365913,
@@ -11870,13 +11870,13 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 8052
+      "triggerTime_ms": 12078
     },
     {
       "Name": "ProceduralFaceKeyFrame",
-      "faceScaleY": 0.24585534349185403,
+      "faceScaleY": 0.245855343491854,
       "scanlineOpacity": 1.0,
-      "faceScaleX": 1.2215965790810475,
+      "faceScaleX": 1.2215965790810477,
       "leftEye": [
         13.473921913614937,
         0.0,
@@ -11906,7 +11906,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 1620.657006303111,
+      "faceCenterY": 1620.6570063031113,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.797809646365913,
@@ -11935,7 +11935,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 8074
+      "triggerTime_ms": 12111
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -12000,11 +12000,11 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 8294
+      "triggerTime_ms": 12441
     },
     {
       "Name": "ProceduralFaceKeyFrame",
-      "faceScaleY": 0.2601673977023198,
+      "faceScaleY": 0.2601673977023197,
       "scanlineOpacity": 1.0,
       "faceScaleX": 1.2044531605113933,
       "leftEye": [
@@ -12065,7 +12065,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 8316
+      "triggerTime_ms": 12474
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -12101,7 +12101,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 1550.3421382278418,
+      "faceCenterY": 1550.342138227842,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.797809646365913,
@@ -12130,11 +12130,11 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 8338
+      "triggerTime_ms": 12507
     },
     {
       "Name": "ProceduralFaceKeyFrame",
-      "faceScaleY": 0.2705761644008403,
+      "faceScaleY": 0.27057616440084026,
       "scanlineOpacity": 1.0,
       "faceScaleX": 1.191985219733463,
       "leftEye": [
@@ -12195,11 +12195,11 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 8492
+      "triggerTime_ms": 12738
     },
     {
       "Name": "ProceduralFaceKeyFrame",
-      "faceScaleY": 0.27708164358741566,
+      "faceScaleY": 0.2770816435874156,
       "scanlineOpacity": 1.0,
       "faceScaleX": 1.1841927567472565,
       "leftEye": [
@@ -12231,7 +12231,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 1480.0272701525723,
+      "faceCenterY": 1480.0272701525726,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.797809646365913,
@@ -12260,7 +12260,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 8602
+      "triggerTime_ms": 12903
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -12325,7 +12325,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 8624
+      "triggerTime_ms": 12936
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -12361,7 +12361,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 1468.3081254733606,
+      "faceCenterY": 1468.3081254733609,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.797809646365913,
@@ -12390,7 +12390,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 8646
+      "triggerTime_ms": 12969
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -12455,11 +12455,11 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 9482
+      "triggerTime_ms": 14223
     },
     {
       "Name": "ProceduralFaceKeyFrame",
-      "faceScaleY": 0.33172766875464854,
+      "faceScaleY": 0.33172766875464843,
       "scanlineOpacity": 1.0,
       "faceScaleX": 1.118736067663122,
       "leftEye": [
@@ -12491,7 +12491,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 1233.9252318891288,
+      "faceCenterY": 1233.9252318891292,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.797809646365913,
@@ -12520,13 +12520,13 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 9526
+      "triggerTime_ms": 14289
     },
     {
       "Name": "ProceduralFaceKeyFrame",
-      "faceScaleY": 0.33432986042927865,
+      "faceScaleY": 0.3343298604292785,
       "scanlineOpacity": 1.0,
-      "faceScaleX": 1.1156190824686394,
+      "faceScaleX": 1.1156190824686396,
       "leftEye": [
         13.469560636560487,
         0.0,
@@ -12556,7 +12556,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 1222.2060872099173,
+      "faceCenterY": 1222.2060872099178,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.690511403520794,
@@ -12585,11 +12585,11 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 9570
+      "triggerTime_ms": 14355
     },
     {
       "Name": "ProceduralFaceKeyFrame",
-      "faceScaleY": 0.3362391861376706,
+      "faceScaleY": 0.33623918613767056,
       "scanlineOpacity": 1.0,
       "faceScaleX": 1.1139756685201099,
       "leftEye": [
@@ -12621,7 +12621,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 1208.002837893935,
+      "faceCenterY": 1208.0028378939355,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.58320559807045,
@@ -12650,11 +12650,11 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 9592
+      "triggerTime_ms": 14388
     },
     {
       "Name": "ProceduralFaceKeyFrame",
-      "faceScaleY": 0.3384811375568078,
+      "faceScaleY": 0.33848113755680787,
       "scanlineOpacity": 1.0,
       "faceScaleX": 1.1122858132075943,
       "leftEye": [
@@ -12686,7 +12686,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 1189.2366402314976,
+      "faceCenterY": 1189.2366402314972,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.513652317872648,
@@ -12715,7 +12715,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 9614
+      "triggerTime_ms": 14421
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -12780,11 +12780,11 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 9636
+      "triggerTime_ms": 14454
     },
     {
       "Name": "ProceduralFaceKeyFrame",
-      "faceScaleY": 0.3429650403950825,
+      "faceScaleY": 0.34296504039508247,
       "scanlineOpacity": 1.0,
       "faceScaleX": 1.1089061025825635,
       "leftEye": [
@@ -12816,7 +12816,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 1151.7042449066196,
+      "faceCenterY": 1151.70424490662,
       "faceCenterX": 0.0,
       "rightEye": [
         -13.100295441820457,
@@ -12845,7 +12845,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 9658
+      "triggerTime_ms": 14487
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -12910,13 +12910,13 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 9680
+      "triggerTime_ms": 14520
     },
     {
       "Name": "ProceduralFaceKeyFrame",
-      "faceScaleY": 0.34744894323335707,
+      "faceScaleY": 0.34744894323335695,
       "scanlineOpacity": 1.0,
-      "faceScaleX": 1.1055263919575324,
+      "faceScaleX": 1.1055263919575327,
       "leftEye": [
         8.107326060759817,
         0.0,
@@ -12946,7 +12946,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 1114.1718495817431,
+      "faceCenterY": 1114.171849581744,
       "faceCenterX": 0.0,
       "rightEye": [
         -7.315991464547729,
@@ -12975,13 +12975,13 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 9702
+      "triggerTime_ms": 14553
     },
     {
       "Name": "ProceduralFaceKeyFrame",
-      "faceScaleY": 0.3496908946524944,
+      "faceScaleY": 0.34969089465249426,
       "scanlineOpacity": 1.0,
-      "faceScaleX": 1.103836536645017,
+      "faceScaleX": 1.1038365366450171,
       "leftEye": [
         8.107326060759817,
         0.0,
@@ -13011,7 +13011,7 @@
       ],
       "faceAngle": 0.0,
       "durationTime_ms": 0,
-      "faceCenterY": 1095.4056519193039,
+      "faceCenterY": 1095.4056519193055,
       "faceCenterX": 0.0,
       "rightEye": [
         -7.315991464547729,
@@ -13040,7 +13040,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 9724
+      "triggerTime_ms": 14586
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -13105,7 +13105,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 9746
+      "triggerTime_ms": 14619
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -13170,7 +13170,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 9768
+      "triggerTime_ms": 14652
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -13235,7 +13235,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 9790
+      "triggerTime_ms": 14685
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -13300,7 +13300,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 9834
+      "triggerTime_ms": 14751
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -13365,7 +13365,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 9878
+      "triggerTime_ms": 14817
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -13430,7 +13430,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 9922
+      "triggerTime_ms": 14883
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -13495,7 +13495,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 9966
+      "triggerTime_ms": 14949
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -13560,7 +13560,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10010
+      "triggerTime_ms": 15015
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -13625,7 +13625,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10098
+      "triggerTime_ms": 15147
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -13690,7 +13690,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10120
+      "triggerTime_ms": 15180
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -13755,7 +13755,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10142
+      "triggerTime_ms": 15213
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -13820,7 +13820,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10164
+      "triggerTime_ms": 15246
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -13885,7 +13885,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10208
+      "triggerTime_ms": 15312
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -13950,7 +13950,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10230
+      "triggerTime_ms": 15345
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -14015,7 +14015,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10252
+      "triggerTime_ms": 15378
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -14080,7 +14080,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10274
+      "triggerTime_ms": 15411
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -14145,7 +14145,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10318
+      "triggerTime_ms": 15477
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -14210,7 +14210,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10340
+      "triggerTime_ms": 15510
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -14275,7 +14275,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10362
+      "triggerTime_ms": 15543
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -14340,7 +14340,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10384
+      "triggerTime_ms": 15576
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -14405,7 +14405,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10406
+      "triggerTime_ms": 15609
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -14470,7 +14470,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10428
+      "triggerTime_ms": 15642
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -14535,7 +14535,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10450
+      "triggerTime_ms": 15675
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -14600,7 +14600,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10472
+      "triggerTime_ms": 15708
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -14665,7 +14665,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10494
+      "triggerTime_ms": 15741
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -14730,7 +14730,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10516
+      "triggerTime_ms": 15774
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -14795,7 +14795,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10538
+      "triggerTime_ms": 15807
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -14860,7 +14860,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10560
+      "triggerTime_ms": 15840
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -14925,7 +14925,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10582
+      "triggerTime_ms": 15873
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -14990,7 +14990,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10604
+      "triggerTime_ms": 15906
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -15055,7 +15055,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10780
+      "triggerTime_ms": 16170
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -15120,7 +15120,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10824
+      "triggerTime_ms": 16236
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -15185,7 +15185,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10868
+      "triggerTime_ms": 16302
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -15250,7 +15250,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10890
+      "triggerTime_ms": 16335
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -15315,7 +15315,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10956
+      "triggerTime_ms": 16434
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -15380,7 +15380,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 10978
+      "triggerTime_ms": 16467
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -15445,7 +15445,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 11022
+      "triggerTime_ms": 16533
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -15510,7 +15510,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 11198
+      "triggerTime_ms": 16797
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -15575,7 +15575,7 @@
         -0.0572629066442961,
         0
       ],
-      "triggerTime_ms": 11220
+      "triggerTime_ms": 16830
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -15640,7 +15640,7 @@
         -0.07365536019829705,
         0
       ],
-      "triggerTime_ms": 11242
+      "triggerTime_ms": 16863
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -15705,7 +15705,7 @@
         -0.07365536019829705,
         0
       ],
-      "triggerTime_ms": 11264
+      "triggerTime_ms": 16896
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -15770,7 +15770,7 @@
         -0.07365536019829705,
         0
       ],
-      "triggerTime_ms": 11286
+      "triggerTime_ms": 16929
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -15835,7 +15835,7 @@
         -0.07365536019829705,
         0
       ],
-      "triggerTime_ms": 11330
+      "triggerTime_ms": 16995
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -15900,7 +15900,7 @@
         -0.07365536019829705,
         0
       ],
-      "triggerTime_ms": 11352
+      "triggerTime_ms": 17028
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -15965,7 +15965,7 @@
         -0.07365536019829705,
         0
       ],
-      "triggerTime_ms": 11374
+      "triggerTime_ms": 17061
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -16030,7 +16030,7 @@
         -0.07365536019829705,
         0
       ],
-      "triggerTime_ms": 11528
+      "triggerTime_ms": 17292
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -16095,7 +16095,7 @@
         -0.07365536019829705,
         0
       ],
-      "triggerTime_ms": 11550
+      "triggerTime_ms": 17325
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -16160,7 +16160,7 @@
         -0.07365536019829705,
         0
       ],
-      "triggerTime_ms": 11572
+      "triggerTime_ms": 17358
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -16225,7 +16225,7 @@
         -0.07365536019829705,
         0
       ],
-      "triggerTime_ms": 11638
+      "triggerTime_ms": 17457
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -16290,7 +16290,7 @@
         -0.07365536019829705,
         0
       ],
-      "triggerTime_ms": 11704
+      "triggerTime_ms": 17556
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -16355,7 +16355,7 @@
         -0.07365536019829705,
         0
       ],
-      "triggerTime_ms": 11770
+      "triggerTime_ms": 17655
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -16420,7 +16420,7 @@
         -0.07365536019829705,
         0
       ],
-      "triggerTime_ms": 11814
+      "triggerTime_ms": 17721
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -16485,7 +16485,7 @@
         -0.07365536019829705,
         0
       ],
-      "triggerTime_ms": 11858
+      "triggerTime_ms": 17787
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -16550,7 +16550,7 @@
         -0.07365536019829705,
         0
       ],
-      "triggerTime_ms": 11880
+      "triggerTime_ms": 17820
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -16615,7 +16615,7 @@
         -0.07365536019829705,
         0
       ],
-      "triggerTime_ms": 11924
+      "triggerTime_ms": 17886
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -16680,7 +16680,7 @@
         -0.07365536019829705,
         0
       ],
-      "triggerTime_ms": 11990
+      "triggerTime_ms": 17985
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -16745,7 +16745,7 @@
         -0.07365536019829705,
         0
       ],
-      "triggerTime_ms": 12078
+      "triggerTime_ms": 18117
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -16810,7 +16810,7 @@
         -0.07365536019829705,
         0
       ],
-      "triggerTime_ms": 12100
+      "triggerTime_ms": 18150
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -16875,7 +16875,7 @@
         -0.07365536019829705,
         0
       ],
-      "triggerTime_ms": 12122
+      "triggerTime_ms": 18183
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -16940,7 +16940,7 @@
         -0.07365536019829705,
         0
       ],
-      "triggerTime_ms": 12144
+      "triggerTime_ms": 18216
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -17005,7 +17005,7 @@
         -0.07365536019829705,
         0
       ],
-      "triggerTime_ms": 12188
+      "triggerTime_ms": 18282
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -17070,7 +17070,7 @@
         -0.07365536019829705,
         0
       ],
-      "triggerTime_ms": 12210
+      "triggerTime_ms": 18315
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -17135,7 +17135,7 @@
         -0.15251076978295272,
         0
       ],
-      "triggerTime_ms": 12232
+      "triggerTime_ms": 18348
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -17200,7 +17200,7 @@
         -0.37820921603185603,
         0
       ],
-      "triggerTime_ms": 12254
+      "triggerTime_ms": 18381
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -17265,7 +17265,7 @@
         -0.37820921603185603,
         0
       ],
-      "triggerTime_ms": 12276
+      "triggerTime_ms": 18414
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -17330,7 +17330,7 @@
         -0.37820921603185603,
         0
       ],
-      "triggerTime_ms": 12298
+      "triggerTime_ms": 18447
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -17395,7 +17395,7 @@
         -0.37820921603185603,
         0
       ],
-      "triggerTime_ms": 12342
+      "triggerTime_ms": 18513
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -17460,7 +17460,7 @@
         -0.37820921603185603,
         0
       ],
-      "triggerTime_ms": 12364
+      "triggerTime_ms": 18546
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -17525,7 +17525,7 @@
         -0.37820921603185603,
         0
       ],
-      "triggerTime_ms": 12386
+      "triggerTime_ms": 18579
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -17590,7 +17590,7 @@
         -0.37820921603185603,
         0
       ],
-      "triggerTime_ms": 12430
+      "triggerTime_ms": 18645
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -17655,7 +17655,7 @@
         -0.37820921603185603,
         0
       ],
-      "triggerTime_ms": 12474
+      "triggerTime_ms": 18711
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -17720,7 +17720,7 @@
         -0.37820921603185603,
         0
       ],
-      "triggerTime_ms": 12496
+      "triggerTime_ms": 18744
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -17785,7 +17785,7 @@
         -0.37820921603185603,
         0
       ],
-      "triggerTime_ms": 12518
+      "triggerTime_ms": 18777
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -17850,7 +17850,7 @@
         -0.37820921603185603,
         0
       ],
-      "triggerTime_ms": 12540
+      "triggerTime_ms": 18810
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -17915,7 +17915,7 @@
         -0.37820921603185603,
         0
       ],
-      "triggerTime_ms": 12738
+      "triggerTime_ms": 19107
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -17980,7 +17980,7 @@
         -0.37820921603185603,
         0
       ],
-      "triggerTime_ms": 12760
+      "triggerTime_ms": 19140
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -18045,7 +18045,7 @@
         -0.37820921603185603,
         0
       ],
-      "triggerTime_ms": 12782
+      "triggerTime_ms": 19173
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -18110,7 +18110,7 @@
         -0.37820921603185603,
         0
       ],
-      "triggerTime_ms": 12826
+      "triggerTime_ms": 19239
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -18175,7 +18175,7 @@
         -0.31301032428487696,
         0
       ],
-      "triggerTime_ms": 12848
+      "triggerTime_ms": 19272
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -18240,7 +18240,7 @@
         -0.12828013100176933,
         0
       ],
-      "triggerTime_ms": 12870
+      "triggerTime_ms": 19305
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -18305,7 +18305,7 @@
         -0.10437387069454371,
         0
       ],
-      "triggerTime_ms": 12892
+      "triggerTime_ms": 19338
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -18370,7 +18370,7 @@
         -0.12393353821863744,
         0
       ],
-      "triggerTime_ms": 12914
+      "triggerTime_ms": 19371
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -18435,7 +18435,7 @@
         -0.12393353821863744,
         0
       ],
-      "triggerTime_ms": 12936
+      "triggerTime_ms": 19404
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -18500,7 +18500,7 @@
         -0.12393353821863744,
         0
       ],
-      "triggerTime_ms": 12958
+      "triggerTime_ms": 19437
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -18565,7 +18565,7 @@
         -0.12393353821863744,
         0
       ],
-      "triggerTime_ms": 13002
+      "triggerTime_ms": 19503
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -18630,7 +18630,7 @@
         -0.12393353821863744,
         0
       ],
-      "triggerTime_ms": 13024
+      "triggerTime_ms": 19536
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -18695,7 +18695,7 @@
         -0.12393353821863744,
         0
       ],
-      "triggerTime_ms": 13046
+      "triggerTime_ms": 19569
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -18760,7 +18760,7 @@
         -0.12393353821863744,
         0
       ],
-      "triggerTime_ms": 13090
+      "triggerTime_ms": 19635
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -18825,7 +18825,7 @@
         -0.12393353821863744,
         0
       ],
-      "triggerTime_ms": 13112
+      "triggerTime_ms": 19668
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -18890,7 +18890,7 @@
         -0.12393353821863744,
         0
       ],
-      "triggerTime_ms": 13134
+      "triggerTime_ms": 19701
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -18955,7 +18955,7 @@
         -0.11447676202830984,
         0
       ],
-      "triggerTime_ms": 13156
+      "triggerTime_ms": 19734
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -19020,7 +19020,7 @@
         -0.06204429467225303,
         0
       ],
-      "triggerTime_ms": 13178
+      "triggerTime_ms": 19767
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -19085,7 +19085,7 @@
         -0.04416524212068426,
         0
       ],
-      "triggerTime_ms": 13200
+      "triggerTime_ms": 19800
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -19150,7 +19150,7 @@
         -0.03097203004689092,
         0
       ],
-      "triggerTime_ms": 13222
+      "triggerTime_ms": 19833
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -19215,7 +19215,7 @@
         -0.006654605557477086,
         0
       ],
-      "triggerTime_ms": 13244
+      "triggerTime_ms": 19866
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -19280,7 +19280,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 13266
+      "triggerTime_ms": 19899
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -19345,7 +19345,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 13288
+      "triggerTime_ms": 19932
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -19410,7 +19410,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 13310
+      "triggerTime_ms": 19965
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -19475,7 +19475,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 13332
+      "triggerTime_ms": 19998
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -19540,7 +19540,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 13376
+      "triggerTime_ms": 20064
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -19605,7 +19605,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 13420
+      "triggerTime_ms": 20130
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -19670,7 +19670,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 13464
+      "triggerTime_ms": 20196
     },
     {
       "Name": "ProceduralFaceKeyFrame",
@@ -19735,72 +19735,7 @@
         0.0,
         0
       ],
-      "triggerTime_ms": 13552
-    },
-    {
-      "Name": "ProceduralFaceKeyFrame",
-      "faceScaleY": 1.0,
-      "scanlineOpacity": 1.0,
-      "faceScaleX": 1.0,
-      "leftEye": [
-        8.107326060759817,
-        0.0,
-        1.5174507300664741,
-        1.1453089027930028,
-        0.0,
-        0.6,
-        0.6,
-        0.6,
-        0.6,
-        0.6,
-        0.6,
-        0.6,
-        0.6,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1,
-        1.0,
-        0.0,
-        0.0,
-        0.0,
-        0
-      ],
-      "faceAngle": 0.0,
-      "durationTime_ms": 0,
-      "faceCenterY": 0.0,
-      "faceCenterX": 0.0,
-      "rightEye": [
-        -7.315991464547729,
-        0.0,
-        1.5174507300664741,
-        1.144941064931666,
-        0.0,
-        0.6,
-        0.6,
-        0.6,
-        0.6,
-        0.6,
-        0.6,
-        0.6,
-        0.6,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1,
-        1.0,
-        0.0,
-        0.0,
-        0.0,
-        0
-      ],
-      "triggerTime_ms": 13728
+      "triggerTime_ms": 20328
     },
     {
       "eventGroups": [
@@ -19819,7 +19754,7 @@
           ]
         }
       ],
-      "triggerTime_ms": 44,
+      "triggerTime_ms": 66,
       "Name": "RobotAudioKeyFrame"
     },
     {
@@ -19839,7 +19774,7 @@
           ]
         }
       ],
-      "triggerTime_ms": 132,
+      "triggerTime_ms": 198,
       "Name": "RobotAudioKeyFrame"
     },
     {
@@ -19859,7 +19794,7 @@
           ]
         }
       ],
-      "triggerTime_ms": 286,
+      "triggerTime_ms": 429,
       "Name": "RobotAudioKeyFrame"
     },
     {
@@ -19879,7 +19814,7 @@
           ]
         }
       ],
-      "triggerTime_ms": 506,
+      "triggerTime_ms": 759,
       "Name": "RobotAudioKeyFrame"
     },
     {
@@ -19899,7 +19834,7 @@
           ]
         }
       ],
-      "triggerTime_ms": 1386,
+      "triggerTime_ms": 2079,
       "Name": "RobotAudioKeyFrame"
     },
     {
@@ -19919,7 +19854,7 @@
           ]
         }
       ],
-      "triggerTime_ms": 1716,
+      "triggerTime_ms": 2574,
       "Name": "RobotAudioKeyFrame"
     },
     {
@@ -19939,7 +19874,7 @@
           ]
         }
       ],
-      "triggerTime_ms": 3102,
+      "triggerTime_ms": 4653,
       "Name": "RobotAudioKeyFrame"
     },
     {
@@ -19959,7 +19894,7 @@
           ]
         }
       ],
-      "triggerTime_ms": 4092,
+      "triggerTime_ms": 6138,
       "Name": "RobotAudioKeyFrame"
     },
     {
@@ -19979,7 +19914,7 @@
           ]
         }
       ],
-      "triggerTime_ms": 4862,
+      "triggerTime_ms": 7293,
       "Name": "RobotAudioKeyFrame"
     },
     {
@@ -19999,7 +19934,7 @@
           ]
         }
       ],
-      "triggerTime_ms": 5214,
+      "triggerTime_ms": 7821,
       "Name": "RobotAudioKeyFrame"
     },
     {
@@ -20019,7 +19954,7 @@
           ]
         }
       ],
-      "triggerTime_ms": 5544,
+      "triggerTime_ms": 8316,
       "Name": "RobotAudioKeyFrame"
     },
     {
@@ -20039,7 +19974,7 @@
           ]
         }
       ],
-      "triggerTime_ms": 5918,
+      "triggerTime_ms": 8877,
       "Name": "RobotAudioKeyFrame"
     },
     {
@@ -20059,7 +19994,7 @@
           ]
         }
       ],
-      "triggerTime_ms": 6292,
+      "triggerTime_ms": 9438,
       "Name": "RobotAudioKeyFrame"
     },
     {
@@ -20079,7 +20014,7 @@
           ]
         }
       ],
-      "triggerTime_ms": 6864,
+      "triggerTime_ms": 10296,
       "Name": "RobotAudioKeyFrame"
     },
     {
@@ -20099,7 +20034,7 @@
           ]
         }
       ],
-      "triggerTime_ms": 7040,
+      "triggerTime_ms": 10560,
       "Name": "RobotAudioKeyFrame"
     },
     {
@@ -20119,7 +20054,7 @@
           ]
         }
       ],
-      "triggerTime_ms": 7458,
+      "triggerTime_ms": 11187,
       "Name": "RobotAudioKeyFrame"
     },
     {
@@ -20139,7 +20074,7 @@
           ]
         }
       ],
-      "triggerTime_ms": 7986,
+      "triggerTime_ms": 11979,
       "Name": "RobotAudioKeyFrame"
     },
     {
@@ -20159,7 +20094,7 @@
           ]
         }
       ],
-      "triggerTime_ms": 8272,
+      "triggerTime_ms": 12408,
       "Name": "RobotAudioKeyFrame"
     },
     {
@@ -20179,7 +20114,7 @@
           ]
         }
       ],
-      "triggerTime_ms": 8492,
+      "triggerTime_ms": 12738,
       "Name": "RobotAudioKeyFrame"
     },
     {
@@ -20199,7 +20134,7 @@
           ]
         }
       ],
-      "triggerTime_ms": 9306,
+      "triggerTime_ms": 13959,
       "Name": "RobotAudioKeyFrame"
     },
     {
@@ -20219,7 +20154,7 @@
           ]
         }
       ],
-      "triggerTime_ms": 10098,
+      "triggerTime_ms": 15147,
       "Name": "RobotAudioKeyFrame"
     },
     {
@@ -20239,7 +20174,7 @@
           ]
         }
       ],
-      "triggerTime_ms": 10758,
+      "triggerTime_ms": 16137,
       "Name": "RobotAudioKeyFrame"
     },
     {
@@ -20259,7 +20194,7 @@
           ]
         }
       ],
-      "triggerTime_ms": 11176,
+      "triggerTime_ms": 16764,
       "Name": "RobotAudioKeyFrame"
     },
     {
@@ -20279,7 +20214,7 @@
           ]
         }
       ],
-      "triggerTime_ms": 11550,
+      "triggerTime_ms": 17325,
       "Name": "RobotAudioKeyFrame"
     },
     {
@@ -20299,7 +20234,7 @@
           ]
         }
       ],
-      "triggerTime_ms": 12100,
+      "triggerTime_ms": 18150,
       "Name": "RobotAudioKeyFrame"
     },
     {
@@ -20319,7 +20254,7 @@
           ]
         }
       ],
-      "triggerTime_ms": 12144,
+      "triggerTime_ms": 18216,
       "Name": "RobotAudioKeyFrame"
     },
     {
@@ -20339,7 +20274,7 @@
           ]
         }
       ],
-      "triggerTime_ms": 12826,
+      "triggerTime_ms": 19239,
       "Name": "RobotAudioKeyFrame"
     },
     {
@@ -20359,12 +20294,12 @@
           ]
         }
       ],
-      "triggerTime_ms": 13156,
+      "triggerTime_ms": 19734,
       "Name": "RobotAudioKeyFrame"
     },
     {
       "animName": "face_uperformance_binaryeyes_01",
-      "triggerTime_ms": 3168,
+      "triggerTime_ms": 4752,
       "Name": "FaceAnimationKeyFrame"
     },
     {
@@ -20375,7 +20310,7 @@
         0.0
       ],
       "Name": "BackpackLightsKeyFrame",
-      "durationTime_ms": 8184,
+      "durationTime_ms": 12276,
       "Back": [
         0.0,
         0.0,
@@ -20410,7 +20345,7 @@
         0.0
       ],
       "Name": "BackpackLightsKeyFrame",
-      "durationTime_ms": 1144,
+      "durationTime_ms": 1716,
       "Back": [
         0.0,
         0.0,
@@ -20429,7 +20364,7 @@
         0.0,
         0.0
       ],
-      "triggerTime_ms": 8184,
+      "triggerTime_ms": 12276,
       "Left": [
         0.0,
         0.0,
@@ -20445,7 +20380,7 @@
         0.0
       ],
       "Name": "BackpackLightsKeyFrame",
-      "durationTime_ms": 1078,
+      "durationTime_ms": 1617,
       "Back": [
         0.0,
         0.0,
@@ -20464,7 +20399,7 @@
         0.0,
         0.0
       ],
-      "triggerTime_ms": 9328,
+      "triggerTime_ms": 13992,
       "Left": [
         0.0,
         0.0,
@@ -20480,7 +20415,7 @@
         0.0
       ],
       "Name": "BackpackLightsKeyFrame",
-      "durationTime_ms": 1606,
+      "durationTime_ms": 2409,
       "Back": [
         0.0,
         0.0,
@@ -20499,7 +20434,7 @@
         0.0,
         0.0
       ],
-      "triggerTime_ms": 10406,
+      "triggerTime_ms": 15609,
       "Left": [
         0.0,
         0.0,
@@ -20515,7 +20450,7 @@
         0.0
       ],
       "Name": "BackpackLightsKeyFrame",
-      "durationTime_ms": 506,
+      "durationTime_ms": 759,
       "Back": [
         0.0,
         0.0,
@@ -20534,7 +20469,7 @@
         0.0,
         0.0
       ],
-      "triggerTime_ms": 12012,
+      "triggerTime_ms": 18018,
       "Left": [
         0.0,
         0.0,
@@ -20550,7 +20485,7 @@
         0.0
       ],
       "Name": "BackpackLightsKeyFrame",
-      "durationTime_ms": 176,
+      "durationTime_ms": 264,
       "Back": [
         0.0,
         0.0,
@@ -20569,7 +20504,7 @@
         0.0,
         0.0
       ],
-      "triggerTime_ms": 12518,
+      "triggerTime_ms": 18777,
       "Left": [
         0.0,
         0.0,
@@ -20585,7 +20520,7 @@
         0.0
       ],
       "Name": "BackpackLightsKeyFrame",
-      "durationTime_ms": 748,
+      "durationTime_ms": 1122,
       "Back": [
         0.0,
         0.0,
@@ -20604,7 +20539,7 @@
         0.0,
         0.0
       ],
-      "triggerTime_ms": 12694,
+      "triggerTime_ms": 19041,
       "Left": [
         0.0,
         0.0,
@@ -20620,7 +20555,7 @@
         0.0
       ],
       "Name": "BackpackLightsKeyFrame",
-      "durationTime_ms": 330,
+      "durationTime_ms": 165,
       "Back": [
         0.0,
         0.0,
@@ -20639,7 +20574,7 @@
         0.0,
         0.0
       ],
-      "triggerTime_ms": 13442,
+      "triggerTime_ms": 20163,
       "Left": [
         0.0,
         0.0,
@@ -20648,478 +20583,373 @@
       ]
     },
     {
-      "Right": [
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "Name": "BackpackLightsKeyFrame",
-      "durationTime_ms": 572,
-      "Back": [
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "Middle": [
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "Front": [
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "triggerTime_ms": 13772,
-      "Left": [
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "Right": [
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "Name": "BackpackLightsKeyFrame",
-      "durationTime_ms": 176,
-      "Back": [
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "Middle": [
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "Front": [
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "triggerTime_ms": 14344,
-      "Left": [
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "Right": [
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "Name": "BackpackLightsKeyFrame",
-      "durationTime_ms": 5808,
-      "Back": [
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "Middle": [
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "Front": [
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "triggerTime_ms": 14520,
-      "Left": [
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "durationTime_ms": 506,
-      "speed": 80,
-      "triggerTime_ms": 88,
+      "durationTime_ms": 759,
+      "speed": 53,
+      "triggerTime_ms": 132,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": "STRAIGHT"
     },
     {
-      "durationTime_ms": 220,
-      "speed": 107,
-      "triggerTime_ms": 594,
+      "durationTime_ms": 330,
+      "speed": 71,
+      "triggerTime_ms": 891,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": 104
     },
     {
-      "durationTime_ms": 572,
-      "speed": 93,
-      "triggerTime_ms": 814,
+      "durationTime_ms": 858,
+      "speed": 62,
+      "triggerTime_ms": 1221,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": -336
     },
     {
-      "durationTime_ms": 396,
-      "speed": 90,
-      "triggerTime_ms": 1386,
+      "durationTime_ms": 594,
+      "speed": 60,
+      "triggerTime_ms": 2079,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": -335
     },
     {
-      "durationTime_ms": 44,
-      "speed": -153,
-      "triggerTime_ms": 1804,
+      "durationTime_ms": 66,
+      "speed": -102,
+      "triggerTime_ms": 2706,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": -32
     },
     {
-      "durationTime_ms": 44,
-      "speed": -157,
-      "triggerTime_ms": 1848,
+      "durationTime_ms": 66,
+      "speed": -105,
+      "triggerTime_ms": 2772,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": 30
     },
     {
-      "durationTime_ms": 44,
-      "speed": -155,
-      "triggerTime_ms": 1892,
+      "durationTime_ms": 66,
+      "speed": -104,
+      "triggerTime_ms": 2838,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": -32
     },
     {
-      "durationTime_ms": 44,
-      "speed": -124,
-      "triggerTime_ms": 1936,
+      "durationTime_ms": 66,
+      "speed": -83,
+      "triggerTime_ms": 2904,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": 37
     },
     {
-      "durationTime_ms": 44,
-      "speed": -102,
-      "triggerTime_ms": 1980,
+      "durationTime_ms": 66,
+      "speed": -68,
+      "triggerTime_ms": 2970,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": -28
     },
     {
-      "durationTime_ms": 44,
-      "speed": -40,
-      "triggerTime_ms": 2024,
+      "durationTime_ms": 66,
+      "speed": -27,
+      "triggerTime_ms": 3036,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": -30
     },
     {
-      "durationTime_ms": 44,
-      "speed": -84,
-      "triggerTime_ms": 3124,
+      "durationTime_ms": 66,
+      "speed": -56,
+      "triggerTime_ms": 4686,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": 262
     },
     {
-      "durationTime_ms": 176,
-      "speed": 104,
-      "triggerTime_ms": 3168,
+      "durationTime_ms": 264,
+      "speed": 69,
+      "triggerTime_ms": 4752,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": 278
     },
     {
-      "durationTime_ms": 154,
-      "speed": 36,
-      "triggerTime_ms": 3344,
+      "durationTime_ms": 231,
+      "speed": 24,
+      "triggerTime_ms": 5016,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": 2186
     },
     {
-      "durationTime_ms": 198,
-      "speed": 10,
-      "triggerTime_ms": 3498,
+      "durationTime_ms": 297,
+      "speed": 7,
+      "triggerTime_ms": 5247,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": -761
     },
     {
-      "durationTime_ms": 66,
-      "speed": -63,
-      "triggerTime_ms": 4114,
+      "durationTime_ms": 99,
+      "speed": -42,
+      "triggerTime_ms": 6171,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": "TURN_IN_PLACE"
     },
     {
-      "durationTime_ms": 66,
+      "durationTime_ms": 99,
       "speed": -2,
-      "triggerTime_ms": 4180,
+      "triggerTime_ms": 6270,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": -1
     },
     {
-      "durationTime_ms": 308,
+      "durationTime_ms": 462,
       "speed": 0,
-      "triggerTime_ms": 4290,
+      "triggerTime_ms": 6435,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": "TURN_IN_PLACE"
     },
     {
-      "durationTime_ms": 264,
+      "durationTime_ms": 396,
       "speed": 0,
-      "triggerTime_ms": 4598,
+      "triggerTime_ms": 6897,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": "TURN_IN_PLACE"
     },
     {
-      "durationTime_ms": 44,
-      "speed": 5,
-      "triggerTime_ms": 4862,
+      "durationTime_ms": 66,
+      "speed": 3,
+      "triggerTime_ms": 7293,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": 1
     },
     {
-      "durationTime_ms": 44,
-      "speed": -4,
-      "triggerTime_ms": 4906,
+      "durationTime_ms": 66,
+      "speed": -3,
+      "triggerTime_ms": 7359,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": 1
     },
     {
-      "durationTime_ms": 44,
-      "speed": 5,
-      "triggerTime_ms": 5214,
+      "durationTime_ms": 66,
+      "speed": 3,
+      "triggerTime_ms": 7821,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": 1
     },
     {
-      "durationTime_ms": 44,
-      "speed": -4,
-      "triggerTime_ms": 5258,
+      "durationTime_ms": 66,
+      "speed": -3,
+      "triggerTime_ms": 7887,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": 1
     },
     {
-      "durationTime_ms": 44,
-      "speed": -95,
-      "triggerTime_ms": 5566,
+      "durationTime_ms": 66,
+      "speed": -63,
+      "triggerTime_ms": 8349,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": -258
     },
     {
-      "durationTime_ms": 44,
-      "speed": -5,
-      "triggerTime_ms": 5918,
+      "durationTime_ms": 66,
+      "speed": -3,
+      "triggerTime_ms": 8877,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": -1
     },
     {
-      "durationTime_ms": 44,
-      "speed": 4,
-      "triggerTime_ms": 5962,
+      "durationTime_ms": 66,
+      "speed": 3,
+      "triggerTime_ms": 8943,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": -1
     },
     {
-      "durationTime_ms": 44,
-      "speed": -128,
-      "triggerTime_ms": 6358,
+      "durationTime_ms": 66,
+      "speed": -85,
+      "triggerTime_ms": 9537,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": 336
     },
     {
-      "durationTime_ms": 66,
-      "speed": -42,
-      "triggerTime_ms": 6402,
+      "durationTime_ms": 99,
+      "speed": -28,
+      "triggerTime_ms": 9603,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": -437
     },
     {
-      "durationTime_ms": 44,
-      "speed": 5,
-      "triggerTime_ms": 6864,
+      "durationTime_ms": 66,
+      "speed": 3,
+      "triggerTime_ms": 10296,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": 1
     },
     {
-      "durationTime_ms": 44,
-      "speed": -4,
-      "triggerTime_ms": 6908,
+      "durationTime_ms": 66,
+      "speed": -3,
+      "triggerTime_ms": 10362,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": 1
     },
     {
-      "durationTime_ms": 44,
-      "speed": -5,
-      "triggerTime_ms": 7062,
+      "durationTime_ms": 66,
+      "speed": -3,
+      "triggerTime_ms": 10593,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": -1
     },
     {
-      "durationTime_ms": 44,
-      "speed": 4,
-      "triggerTime_ms": 7106,
+      "durationTime_ms": 66,
+      "speed": 3,
+      "triggerTime_ms": 10659,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": -1
     },
     {
-      "durationTime_ms": 44,
-      "speed": -65,
-      "triggerTime_ms": 7502,
+      "durationTime_ms": 66,
+      "speed": -43,
+      "triggerTime_ms": 11253,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": 245
     },
     {
-      "durationTime_ms": 66,
-      "speed": -21,
-      "triggerTime_ms": 7546,
+      "durationTime_ms": 99,
+      "speed": -14,
+      "triggerTime_ms": 11319,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": "STRAIGHT"
     },
     {
-      "durationTime_ms": 44,
-      "speed": -108,
-      "triggerTime_ms": 8008,
+      "durationTime_ms": 66,
+      "speed": -72,
+      "triggerTime_ms": 12012,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": 2473
     },
     {
-      "durationTime_ms": 44,
-      "speed": 79,
-      "triggerTime_ms": 8052,
+      "durationTime_ms": 66,
+      "speed": 53,
+      "triggerTime_ms": 12078,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": 3924
     },
     {
-      "durationTime_ms": 44,
-      "speed": -5,
-      "triggerTime_ms": 8272,
+      "durationTime_ms": 66,
+      "speed": -3,
+      "triggerTime_ms": 12408,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": 1
     },
     {
-      "durationTime_ms": 44,
-      "speed": 4,
-      "triggerTime_ms": 8316,
+      "durationTime_ms": 66,
+      "speed": 3,
+      "triggerTime_ms": 12474,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": 1
     },
     {
-      "durationTime_ms": 44,
-      "speed": -104,
-      "triggerTime_ms": 8580,
+      "durationTime_ms": 66,
+      "speed": -69,
+      "triggerTime_ms": 12870,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": 390
     },
     {
-      "durationTime_ms": 66,
-      "speed": 111,
-      "triggerTime_ms": 8624,
-      "Name": "BodyMotionKeyFrame",
-      "radius_mm": "STRAIGHT"
-    },
-    {
-      "durationTime_ms": 44,
-      "speed": -107,
-      "triggerTime_ms": 8690,
+      "durationTime_ms": 99,
+      "speed": 74,
+      "triggerTime_ms": 12936,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": "STRAIGHT"
     },
     {
       "durationTime_ms": 66,
-      "speed": -35,
-      "triggerTime_ms": 8734,
+      "speed": -71,
+      "triggerTime_ms": 13035,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": "STRAIGHT"
     },
     {
-      "durationTime_ms": 88,
-      "speed": -129,
-      "triggerTime_ms": 9680,
+      "durationTime_ms": 99,
+      "speed": -23,
+      "triggerTime_ms": 13101,
+      "Name": "BodyMotionKeyFrame",
+      "radius_mm": "STRAIGHT"
+    },
+    {
+      "durationTime_ms": 132,
+      "speed": -86,
+      "triggerTime_ms": 14520,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": -10894
     },
     {
-      "durationTime_ms": 66,
-      "speed": -45,
-      "triggerTime_ms": 9768,
+      "durationTime_ms": 99,
+      "speed": -30,
+      "triggerTime_ms": 14652,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": "STRAIGHT"
     },
     {
-      "durationTime_ms": 682,
+      "durationTime_ms": 1023,
       "speed": 0,
-      "triggerTime_ms": 9922,
+      "triggerTime_ms": 14883,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": 54
     },
     {
-      "durationTime_ms": 66,
-      "speed": -6,
-      "triggerTime_ms": 11264,
+      "durationTime_ms": 99,
+      "speed": -4,
+      "triggerTime_ms": 16896,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": -5
     },
     {
-      "durationTime_ms": 88,
-      "speed": -10,
-      "triggerTime_ms": 12232,
+      "durationTime_ms": 132,
+      "speed": -7,
+      "triggerTime_ms": 18348,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": 7
     },
     {
-      "durationTime_ms": 198,
-      "speed": 6,
-      "triggerTime_ms": 12320,
+      "durationTime_ms": 297,
+      "speed": 4,
+      "triggerTime_ms": 18480,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": "STRAIGHT"
     },
     {
-      "durationTime_ms": 286,
-      "speed": -4,
-      "triggerTime_ms": 12518,
+      "durationTime_ms": 429,
+      "speed": -3,
+      "triggerTime_ms": 18777,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": "STRAIGHT"
     },
     {
-      "durationTime_ms": 88,
-      "speed": -80,
-      "triggerTime_ms": 12804,
+      "durationTime_ms": 132,
+      "speed": -53,
+      "triggerTime_ms": 19206,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": "STRAIGHT"
     },
     {
-      "durationTime_ms": 66,
-      "speed": 148,
-      "triggerTime_ms": 12892,
+      "durationTime_ms": 99,
+      "speed": 99,
+      "triggerTime_ms": 19338,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": -1691
     },
     {
-      "durationTime_ms": 44,
-      "speed": 66,
-      "triggerTime_ms": 12958,
+      "durationTime_ms": 66,
+      "speed": 44,
+      "triggerTime_ms": 19437,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": "STRAIGHT"
     },
     {
-      "durationTime_ms": 110,
-      "speed": -78,
-      "triggerTime_ms": 13178,
+      "durationTime_ms": 165,
+      "speed": -52,
+      "triggerTime_ms": 19767,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": 12
     },
     {
-      "durationTime_ms": 110,
-      "speed": -28,
-      "triggerTime_ms": 13288,
+      "durationTime_ms": 165,
+      "speed": -19,
+      "triggerTime_ms": 19932,
       "Name": "BodyMotionKeyFrame",
       "radius_mm": 15
     }
