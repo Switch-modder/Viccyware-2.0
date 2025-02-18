@@ -100,7 +100,7 @@ void SpeechRecognizerSnowboy::Update(const AudioUtil::AudioSample* audioData, un
     {
         return;
     }
-    uint32_t frameLength = 2048;
+    uint32_t frameLength = 1024;
     if (frameLength == 0) {
         LOG_ERROR("SpeechRecognizerSnowboy.Update", "Invalid frame length from Snowboy");
         return;
