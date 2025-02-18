@@ -18,6 +18,7 @@
     
     // TEMP: maybe only one of these  // TEMP:  // TEMP: 
     "PossibleIntentionalPerformance",
+    "PossibleUnintentionalPerformance",
     "ReactToGazeDirection",
     "SocializeInteraction"
 
