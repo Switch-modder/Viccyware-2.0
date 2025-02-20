@@ -109,13 +109,13 @@ namespace BackpackLightController {
     const u16 kTimeDiff_ms = 600;
     for(u8 i = 0; i < (u8)LEDId::NUM_BACKPACK_LEDS; i++)
     {
-      u32 color;
+      u32 color; // Light easter egg
       if(i == 0) {
-        color = 0x80ff0000; // red for back led
+        color = 0x808105f5; // Violet for back led
       } else if(i == 1) {
-        color = 0x8000ff00; // green for middle led
+        color = 0x8005c9f5; // Cyan for middle led
       } else if(i == 2) {
-        color = 0x800000ff; // blue for top led
+        color = 0x80ffffff; // White for top led
       } else {
         color = 0x80808000; // fallback color
       }
@@ -125,8 +125,8 @@ namespace BackpackLightController {
         .offColor = 0,
         .onPeriod_ms = static_cast<u16>(kTimeDiff_ms * (i+1)),
         .offPeriod_ms = static_cast<u16>(kTimeDiff_ms * ((u8)LEDId::NUM_BACKPACK_LEDS - 1 - i)),
-        .transitionOnPeriod_ms = 300,
-        .transitionOffPeriod_ms = 300,
+        .transitionOnPeriod_ms = 600,
+        .transitionOffPeriod_ms = 800,
         .offset_ms = static_cast<s16>(kTimeDiff_ms * ((u8)LEDId::NUM_BACKPACK_LEDS - 1 - i))
       };
     }
