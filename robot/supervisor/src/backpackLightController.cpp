@@ -106,7 +106,7 @@ namespace BackpackLightController {
   {
     memset(&_ledParams[(int)BackpackLightLayer::BPL_USER], 0, sizeof(_ledParams[(int)BackpackLightLayer::BPL_USER]));
 
-    const u16 kTimeDiff_ms = 600;
+    const u16 kTimeDiff_ms = 1000;
     for(u8 i = 0; i < (u8)LEDId::NUM_BACKPACK_LEDS; i++)
     {
       u32 color; // Light easter egg
