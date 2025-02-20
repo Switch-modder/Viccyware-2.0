@@ -1,6 +1,6 @@
-# Victorware-2.0
+# Victorware/Viccyware-tester
 
-Welcome to the unstable branch of `Victorware-2.0`. This is the home of a modified copy of the Vector source
+Welcome to the unstable branch of `Victorware/Viccyware`. This is the home of a modified copy of the Vector source
 code. Original README: [README-orig.md](/README-orig.md)
 
 Check the [wiki](https://github.com/kercre123/victor/wiki) for more information about the leak, what we can do with this, and general Vector info.
@@ -23,8 +23,8 @@ This branch of the Vector source code will attempt to reimpliment Cozmo from old
 
 ```
 cd ~
-git clone --recurse-submodules https://github.com/Switch-modder/Viccyware-2.0 -b Victorware-2.0-tester
-cd Viccyware-2.0
+git clone --recurse-submodules https://github.com/Switch-modder/Viccyware -b Victorware-tester
+cd Viccyware
 git lfs install
 git lfs pull
 ```
@@ -41,7 +41,7 @@ sudo chmod 660 /var/run/docker.sock
 
 3. Run the build script:
 ```
-cd ~/Viccyware-2.0
+cd ~/Viccyware
 ./wire/build-d.sh
 ```
 
@@ -56,8 +56,8 @@ cd ~/Viccyware-2.0
 
 ```
 cd ~
-git clone --recurse-submodules https://github.com/Switch-modder/Viccyware-2.0 -b Victorware-2.0-tester
-cd Viccyware-2.0
+git clone --recurse-submodules https://github.com/Switch-modder/Viccyware -b Victorware-tester
+cd Viccyware
 git lfs install
 git lfs pull
 ```
@@ -80,7 +80,7 @@ pyenv shell 2.7.18
 
 3. Run the build script:
 ```
-cd ~/Viccyware-2.0
+cd ~/Viccyware
 ./wire/build.sh
 ```
 
