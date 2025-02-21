@@ -125,8 +125,8 @@ namespace BackpackLightController {
         .offColor = 0,
         .onPeriod_ms = static_cast<u16>(kTimeDiff_ms * (i+1)),
         .offPeriod_ms = static_cast<u16>(kTimeDiff_ms * ((u8)LEDId::NUM_BACKPACK_LEDS - 1 - i)),
-        .transitionOnPeriod_ms = 600,
-        .transitionOffPeriod_ms = 800,
+        .transitionOnPeriod_ms = 300,
+        .transitionOffPeriod_ms = 300,
         .offset_ms = static_cast<s16>(kTimeDiff_ms * ((u8)LEDId::NUM_BACKPACK_LEDS - 1 - i))
       };
     }
