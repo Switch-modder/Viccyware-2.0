@@ -1,6 +1,6 @@
-# Victorware/Viccyware-tester
+# Viccyware-tester
 
-Welcome to the unstable branch of `Victorware/Viccyware`. This is the home of a modified copy of the Vector source
+Welcome to the unstable branch of `Viccyware`. This is the home of a modified copy of the Vector source
 code. Original README: [README-orig.md](/README-orig.md)
 
 Check the [wiki](https://github.com/kercre123/victor/wiki) for more information about the leak, what we can do with this, and general Vector info.
