@@ -109,13 +109,13 @@ namespace BackpackLightController {
     const u16 kTimeDiff_ms = 1000;
     for(u8 i = 0; i < (u8)LEDId::NUM_BACKPACK_LEDS; i++)
     {
-      u32 color; // Light easter egg
+      u32 color; // Purple lights
       if(i == 0) {
-        color = 0x808105f5; // Violet for back led
+        color = 0xff07b5f5;
       } else if(i == 1) {
-        color = 0x8005c9f5; // Cyan for middle led
+        color = 0xff07b5f5;
       } else if(i == 2) {
-        color = 0x80ffffff; // White for top led
+        color = 0xff07b5f5;
       } else {
         color = 0x80808000; // fallback color
       }
