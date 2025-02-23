@@ -2,7 +2,7 @@
   "behaviorClass": "GoHome",
   "behaviorID": "GoHome",
   
-  "useCliffSensorCorrection" : false,
+  "useCliffSensorCorrection" : true,
   "leftTurnAnimTrigger"      : "ChargerDockingLeftTurn",
   "rightTurnAnimTrigger"     : "ChargerDockingRightTurn",
   "drivingStartAnimTrigger"  : "ChargerDockingDrivingStart",
