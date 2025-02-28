@@ -28,9 +28,6 @@ if [[ ${UNAME} == "Darwin" ]]; then
     git checkout macos
     git lfs install
     git lfs pull
-    echo "Disabling security..."
-    sudo spctl --master-disable
-    sudo spctl --global-disable
 fi
 
 cd "${VICDIR}"
