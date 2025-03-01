@@ -164,28 +164,6 @@ def verify_signature(file_path_name, sig_path_name, public_key):
     openssl_out, openssl_err = openssl.communicate()
     return ret_code == 0, ret_code, openssl_out, openssl_err
 
-def verify_signature_or_die(file_path_name, sig_path_name):
-    pub_key_paths = [OTA_PUB_KEY]
-
-    if os.path.isdir("/data/etc/ota_keys"):
-        for user_key in glob.glob("/data/etc/ota_keys/*.pub"):
-            logv("Adding key " + user_key)
-            pub_key_paths.append(user_key)
-
-    for key in pub_key_paths:
-        results = verify_signature(file_path_name, sig_path_name, key)
-        if results[0]:
-            logv("Key %s passed" % key)
-            if key == OTA_PUB_KEY:
-                return "SYSTEM_KEY"
-            else:
-                return "USER_KEY"
-        else:
-            logv("Key %s failed" % key)
-    die(209, "Manifest failed signature validation, signature didn't match any known keys")
-
-
-
 def get_prop(property_name):
     "Gets a value from the property server via subprocess"
     getprop = subprocess.Popen(["/usr/bin/getprop", property_name], shell=False, stdout=subprocess.PIPE)
