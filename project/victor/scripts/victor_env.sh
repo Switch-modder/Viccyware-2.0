@@ -47,6 +47,12 @@ robot_cp ()
         ARGS=""
     fi
 
+    VERSION=$(ssh -V 2>&1 | awk '{print $1}' | sed 's/OpenSSH_//; s/p.*//')
+ 
+    if [[ $(echo -e "$VERSION\n9.8" | sort -V | tail -1) == "$VERSION" ]]; then
+        ARGS+=" -O"
+    fi
+
     SRC="$1"
     DST=$ANKI_ROBOT_USER@$ANKI_ROBOT_HOST:"$2"
 
@@ -66,6 +72,12 @@ robot_cp_from ()
         shift
     else
         ARGS=""
+    fi
+
+    VERSION=$(ssh -V 2>&1 | awk '{print $1}' | sed 's/OpenSSH_//; s/p.*//')
+ 
+    if [[ $(echo -e "$VERSION\n9.8" | sort -V | tail -1) == "$VERSION" ]]; then
+        ARGS+=" -O"
     fi
 
     SRC=$ANKI_ROBOT_USER@$ANKI_ROBOT_HOST:"$1"
