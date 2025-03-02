@@ -357,8 +357,13 @@ else
   done
 fi
 if [[ $BUILD_PROTOC_PLUGIN -eq 1 ]]; then
-    ${TOPLEVEL}/tools/protobuf/plugin/make.sh
+    if [[ "$(uname -m)" == "arm64" ]]; then
+        ${TOPLEVEL}/tools/protobuf/plugin/make-arm-mac.sh
+    else
+        ${TOPLEVEL}/tools/protobuf/plugin/make.sh
+    fi
 fi
+
 
 # Build/Install the protoc generators for go
 GOBIN="${TOPLEVEL}/cloud/go/bin"

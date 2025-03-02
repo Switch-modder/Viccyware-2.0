@@ -103,6 +103,7 @@ list(APPEND VICOS_COMPILER_FLAGS
 	-fdata-sections
 	-funwind-tables
 	-fstack-protector-strong
+	-Wno-nonportable-include-path
 #  -flto
 #  -fvisibility=hidden
 #  -fsanitize=cfi
@@ -110,6 +111,7 @@ list(APPEND VICOS_COMPILER_FLAGS
 list(APPEND VICOS_COMPILER_FLAGS_CXX
     -Qunused-arguments
 	-fno-exceptions
+	-Wno-nonportable-include-path
 	-fno-rtti)
 list(APPEND VICOS_COMPILER_FLAGS_RELEASE
   -D_FORTIFY_SOURCE=2)
@@ -131,7 +133,7 @@ list(APPEND VICOS_COMPILER_FLAGS_DEBUG
 	-O0
         -fno-limit-debug-info)
 list(APPEND VICOS_COMPILER_FLAGS_RELEASE
-	-Os
+	-Ofast
         -DNDEBUG)
 
 if(CMAKE_BUILD_TYPE STREQUAL "Debug")

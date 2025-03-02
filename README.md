@@ -1,6 +1,6 @@
-# Victorware-2.0
+# Viccyware-tester
 
-Welcome to the unstable branch of `Victorware-2.0`. This is the home of a modified copy of the Vector source
+Welcome to the unstable branch of `Viccyware`. This is the home of a modified copy of the Vector source
 code. Original README: [README-orig.md](/README-orig.md)
 
 Check the [wiki](https://github.com/kercre123/victor/wiki) for more information about the leak, what we can do with this, and general Vector info.
@@ -23,8 +23,8 @@ This branch of the Vector source code will attempt to reimpliment Cozmo from old
 
 ```
 cd ~
-git clone --recurse-submodules https://github.com/Switch-modder/Viccyware-2.0 -b Victorware-2.0-tester
-cd Viccyware-2.0
+git clone --recurse-submodules https://github.com/Switch-modder/Viccyware -b Viccyware-tester
+cd Viccyware
 git lfs install
 git lfs pull
 ```
@@ -41,13 +41,13 @@ sudo chmod 660 /var/run/docker.sock
 
 3. Run the build script:
 ```
-cd ~/Viccyware-2.0
+cd ~/Viccyware
 ./wire/build-d.sh
 ```
 
 3. It should just work! The output will be in `./_build/vicos/Release/`
 
-## Building (Intel macOS)
+## Building (Intel or ARM64 macOS)
 
  - Prereqs: Make sure you have [brew](https://brew.sh/) installed.
    -  Then: `brew install pyenv git-lfs ccache`
@@ -56,8 +56,8 @@ cd ~/Viccyware-2.0
 
 ```
 cd ~
-git clone --recurse-submodules https://github.com/Switch-modder/Viccyware-2.0 -b Victorware-2.0-tester
-cd Viccyware-2.0
+git clone --recurse-submodules https://github.com/Switch-modder/Viccyware -b Viccyware-tester
+cd Viccyware
 git lfs install
 git lfs pull
 ```
@@ -77,14 +77,22 @@ eval "$(pyenv init -)"
 pyenv shell 2.7.18
 ```
 
+3. Disable security:
 
-3. Run the build script:
 ```
-cd ~/Viccyware-2.0
+sudo spctl --master-disable
+sudo spctl --global-disable
+```
+- You will have to head to `System Settings -> Security & Privacy -> Allow applications from` and select "Anywhere".
+
+
+4. Run the build script:
+```
+cd ~/Viccyware
 ./wire/build.sh
 ```
 
-3. It should just work! The output will be in `./_build/vicos/Release/`
+5. It should just work! The output will be in `./_build/vicos/Release/`
 
 ## Deploying
 

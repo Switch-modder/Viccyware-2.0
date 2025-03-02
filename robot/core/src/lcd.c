@@ -37,6 +37,8 @@ static GPIO DnC_PIN;
 
 static lcd_display_t LCD_DISPLAY_MAN;
 
+static bool isXray;
+
 
 #define RSHIFT 0x1C
 #define XSHIFT 0x0
@@ -151,7 +153,7 @@ static uint32_t get_vector_hw_version() {
 
 static inline const bool IsXray()
 {
-  return get_vector_hw_version() >= 0x20;
+  return isXray;
 }
 
 /************* LCD SPI Interface ***************/
@@ -160,6 +162,10 @@ static int lcd_fd;
 
 lcd_display_t lcd_display_version() {
   return IsXray() ? MIDAS : SANTEK;
+}
+
+void InitIsXray() {
+  isXray = (get_vector_hw_version() >= 0x20);
 }
 
 bool lcd_use_midas_crop() {
@@ -272,9 +278,6 @@ static void lcd_device_init()
   
   // Turn display on
   lcd_run_script(lcd_display_version() == SANTEK ? display_on_scr_santek : display_on_scr_midas);
-
-  // define LCD manufacturer rather than read the EMR partition upon EVERY SINGLE LCD DRAW
-  LCD_DISPLAY_MAN = lcd_display_version();
 }
 
 void lcd_clear_screen(void) {
@@ -398,6 +401,10 @@ int lcd_set_brightness(int brightness)
 }
 
 int lcd_init(void) {
+
+  // define LCD manufacturer rather than read the EMR partition upon EVERY SINGLE LCD DRAW
+  InitIsXray();
+  LCD_DISPLAY_MAN = lcd_display_version();
 
   int res = lcd_set_brightness(10);
   if(res < 0)

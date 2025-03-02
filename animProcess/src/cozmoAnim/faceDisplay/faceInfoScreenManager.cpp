@@ -57,12 +57,19 @@
 #include <fstream>
 #include <iomanip>
 #include <thread>
+#include <sys/stat.h>
+#include <string>
 
 #ifndef SIMULATOR
 #include <linux/reboot.h>
 #include <sys/reboot.h>
 #endif
 
+// CHANGE THIS TO BE YOUR PROJECT'S STUFF
+const std::string OSProject = "Viccyware";
+const std::string OSBranch = "Viccyware-tester";
+const std::string Creator = "Built by the Viccyware Team";
+const std::string CreatorWebsite = "viccyware.com";
 
 // Log options
 #define LOG_CHANNEL    "FaceInfoScreenManager"
@@ -89,6 +96,15 @@ namespace Vector {
 const Point2f FaceInfoScreenManager::kDefaultTextStartingLoc_pix = {0,10};
 const u32 FaceInfoScreenManager::kDefaultTextSpacing_pix = 11;
 const f32 FaceInfoScreenManager::kDefaultTextScale = 0.4f;
+
+bool isDeployed() {
+    struct stat info;
+    if (stat("/anki-devtools", &info) != 0) {
+        return false;
+    }
+    return S_ISDIR(info.st_mode);
+}
+
 
 namespace {
   // Number of tics that a wheel needs to be moving for before it registers
@@ -236,16 +252,14 @@ void FaceInfoScreenManager::Init(Anim::AnimContext* context, Anim::AnimationStre
   if(IsWhiskey())
   {
     ADD_SCREEN(Camera, ToF);
-    ADD_SCREEN(ToF, Kercre123);    // Go to the repo screens before main
+    ADD_SCREEN(ToF, BuildInfo);    // Last screen cycles back to Main
   }
   else
   {
-    ADD_SCREEN(Camera, Kercre123);
+    ADD_SCREEN(Camera, BuildInfo);
   }
 
-  ADD_SCREEN_WITH_TEXT(Kercre123, Kercre123branch, {"REPO: Victorware-2.0"});
-	
-  ADD_SCREEN_WITH_TEXT(Kercre123branch, Main, {"BRANCH: Tester"});
+  ADD_SCREEN(BuildInfo, Main);
 
 
   // ========== Screen Customization ========= 
@@ -302,9 +316,9 @@ void FaceInfoScreenManager::Init(Anim::AnimContext* context, Anim::AnimationStre
 
   ADD_MENU_ITEM(Main, "EXIT", None);
 #if ENABLE_SELF_TEST
-  ADD_MENU_ITEM(Main, "SELF TEST", SelfTest);
+  ADD_MENU_ITEM(Main, IsXray() ? "TEST" : "SELF TEST", SelfTest);
 #endif
-  ADD_MENU_ITEM(Main, "CLEAR OUT SOUL", ClearUserData);
+  ADD_MENU_ITEM(Main, IsXray() ? "CLEAR" : "CLEAR OUT SOUL", ClearUserData);
 
   // === Self test screen ===
   ADD_MENU_ITEM(SelfTest, "EXIT", Main);
@@ -1238,6 +1252,9 @@ void FaceInfoScreenManager::Update(const RobotState& state)
     case ScreenName::CameraMotorTest:
       UpdateCameraTestMode(state.timestamp);
       break;
+    case ScreenName::BuildInfo:
+      DrawBuildInfo();
+      break;
     default:
       // Other screens are either updated once when SetScreen() is called
       // or updated by their own draw functions that are called externally
@@ -1282,15 +1299,16 @@ void FaceInfoScreenManager::DrawMain()
 
   const std::string hwVer    = "HW: "   + std::to_string(Factory::GetEMR()->fields.HW_VER);
 
-  const std::string osVer    = "OS: "   + osstate->GetOSBuildVersion() +
-                                          (FACTORY_TEST ? " (V4)" : "") +
-                                          (osstate->IsInRecoveryMode() ? " U" : "");
+  const std::string osProject    = "OS: " + OSProject;
+
+  // osVer will be sha if deployed build
+  std::string osVer = "VER: " + osstate->GetOSBuildVersion();
 
   const std::string ssid     = "SSID: " + osstate->GetSSID(true);
 
-#if ANKI_DEV_CHEATS
-  const std::string sha      = "SHA: "  + osstate->GetBuildSha();
-#endif
+  if (isDeployed()) {
+    osVer      = "SHA: "  + osstate->GetBuildSha();
+  }
 
   std::string ip             = osstate->GetIPAddress();
   if (ip.empty()) {
@@ -1300,15 +1318,13 @@ void FaceInfoScreenManager::DrawMain()
   // ESN/serialNo and the HW version are drawn on the same line with serialNo default left aligned and
   // HW version right aligned.
   ColoredTextLines lines = { { {serialNo}, {hwVer, NamedColors::WHITE, false} },
-                             {osVer}, 
+                             {osProject},
+                             {osVer},
                              {ssid}, 
 #if FACTORY_TEST
                              {"IP: " + ip},
 #else
                              { {"IP: "}, {ip, (osstate->IsValidIPAddress(ip) ? NamedColors::GREEN : NamedColors::RED)} },
-#endif
-#if ANKI_DEV_CHEATS
-			     {sha},
 #endif
                            };
 
@@ -1450,6 +1466,17 @@ void FaceInfoScreenManager::DrawSensorInfo(const RobotState& state)
   } else {
     DrawTextOnScreen({syscon, cliffs, prox1, prox2, touch, batt, charger, tempC});
   }
+}
+
+void FaceInfoScreenManager::DrawBuildInfo() {
+  auto *osstate = OSState::getInstance();
+  const std::string osProject = "OS: " + OSProject;
+  const std::string branch = "BRANCH: " + OSBranch;
+  const std::string osVer = "VER: " + osstate->GetOSBuildVersion();
+  const std::string sha = "SHA: " + osstate->GetBuildSha();
+  const std::string creator = Creator;
+  const std::string creatorWebsite = CreatorWebsite;
+  DrawTextOnScreen({osProject, branch, osVer, sha, creator, creatorWebsite});
 }
 
 void FaceInfoScreenManager::DrawIMUInfo(const RobotState& state)

@@ -15,9 +15,9 @@
     // contains internal cooldowns and requirements
     "PossibleUnintentionalPerformance",
 
-    "ObservingInternal",
+    "PossibleIntentionalPerformance",
 
-    "SnakeGame"
+    "ObservingInternal"
   ],
 
   "anonymousBehaviors" : [
