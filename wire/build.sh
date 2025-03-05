@@ -22,6 +22,9 @@ if [[ ! -d .anki ]]; then
     mv anki-deps .anki
 fi
 
+echo "Linking anim folders"
+sln -sf ~/Viccyware/EXTERNALS/animation-assets/engine/animations/ ~/Viccyware/resources/config/engine/animations
+
 echo "Updating anki-deps..."
 cd ~/.anki
 git pull
