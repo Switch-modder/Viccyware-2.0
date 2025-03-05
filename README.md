@@ -69,7 +69,7 @@ pyenv install 2.7.18
 pyenv init
 ```
 
-- Add the following to both ~/.zshrc and ~/.zprofile:
+- Add the following to both ~/.zshrc and ~/.zprofile. After doing so, run the commands in your terminal session:
 ```
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
