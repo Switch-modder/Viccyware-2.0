@@ -15,8 +15,6 @@
     // contains internal cooldowns and requirements
     "PossibleUnintentionalPerformance",
 
-    "PossibleIntentionalPerformance",
-
     "ObservingInternal"
   ],
 
