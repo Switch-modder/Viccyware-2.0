@@ -89,7 +89,7 @@ void BehaviorDanceToTheBeatCoordinator::InitBehavior()
   
   _iConfig.driveOffChargerBehavior = BC.FindBehaviorByID(BEHAVIOR_ID(DriveOffChargerStraight));
   _iConfig.goHomeBehavior = BC.FindBehaviorByID(BEHAVIOR_ID(FindAndGoToHome));
-  _iConfig.doExploring = BC.FindBehaviorByID(BEHAVIOR_ID(Socialize));
+  _iConfig.doSocialize = BC.FindBehaviorByID(BEHAVIOR_ID(Socialize));
 }
   
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -263,8 +263,8 @@ void BehaviorDanceToTheBeatCoordinator::TransitionToOffChargerListening()
                           // Dancing does not want to run - just go back home in this case
                           PRINT_CH_INFO("Behaviors", "BehaviorDanceToTheBeatCoordinator.TransitionToOffChargerListening.DoesNotWantToDance",
                                         "Returning to charger since the offChargerDancing behavior does not want to run");
-                          if (_iConfig.doExploring->WantsToBeActivated()) {
-                            DelegateIfInControl(_iConfig.Socialize.get());
+                          if (_iConfig.doSocialize->WantsToBeActivated()) {
+                            DelegateIfInControl(_iConfig.doSocialize.get());
                           } else if (_iConfig.goHomeBehavior->WantsToBeActivated()) {
                             DelegateIfInControl(_iConfig.goHomeBehavior.get());
                           }
