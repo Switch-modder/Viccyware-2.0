@@ -50,7 +50,7 @@ cd ~/Viccyware
 ## Building (Intel or ARM64 macOS)
 
  - Prereqs: Make sure you have [brew](https://brew.sh/) installed.
-   -  Then: `brew install pyenv git-lfs ccache`
+   -  Then: `brew install pyenv git-lfs ccache wget`
 
 1. Clone the repo and cd into it:
 
