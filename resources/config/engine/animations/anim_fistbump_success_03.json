@@ -3249,19 +3249,6 @@
     {
       "volume": 1.0,
       "audioName": [
-        "Play__Robot_Vo__Shared_Excited_Loop_Play"
-      ],
-      "Name": "RobotAudioKeyFrame",
-      "probability": 1.0,
-      "hasAlts": true,
-      "triggerTime_ms": 858.0,
-      "audioEventId": [
-        2679819871
-      ]
-    },
-    {
-      "volume": 1.0,
-      "audioName": [
         "Stop__Robot_Vo__Shared_Excited_Loop_Stop"
       ],
       "Name": "RobotAudioKeyFrame",
