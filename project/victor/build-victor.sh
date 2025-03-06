@@ -376,7 +376,7 @@ if [ $CONFIGURE -eq 1 ]; then
     fi
 
     # Process BUILD.in files
-    PATH="$(dirname $GO_EXE):$PATH" ${BUILD_TOOLS}/metabuild/metabuild.py $METABUILD_VERBOSE \
+    ${BUILD_TOOLS}/metabuild/metabuild.py $METABUILD_VERBOSE \
         -o ${GEN_SRC_DIR} \
         ${METABUILD_INPUTS}
 
@@ -427,6 +427,7 @@ if [ $CONFIGURE -eq 1 ]; then
 
     # Append additional platrom args
     PLATFORM_ARGS+=(${ADDITIONAL_PLATFORM_ARGS[@]})
+    echo "PLATFORM ARGS $PLATFORM_ARGS"
     $CMAKE_EXE ${TOPLEVEL} \
         ${VERBOSE_ARG} \
         -G"${GENERATOR}" \
